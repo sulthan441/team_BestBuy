@@ -1,0 +1,244 @@
+{
+  "homeData": [
+    {
+      "id": 1,
+      "image": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg",
+      "title": "Apple - iPhone 14 Pro Max 128GB - Deep",
+      "Section": "top-picks"
+    },
+    {
+      "id": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeqSrEa2wu3Vz0f9SsaE5RiQDAf8jblnvEWw&usqp=CAU",
+      "title": "Apple - AirPods Pro (2nd generation) -",
+      "Section": "top-picks"
+    },
+    {
+      "id": 3,
+      "image": "data:image/jpeg;base64,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",
+      "title": "Apple - 10.2-Inch iPad (Latest Model) with Wi",
+      "Section": "top-picks"
+    },
+    {
+      "id": 4,
+      "image": "data:image/jpeg;base64,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",
+      "title": "Google - Pixel 7 Pro 128GB (Unlocked) -",
+      "Section": "top-picks"
+    },
+    {
+      "id": 5,
+      "image": "data:image/jpeg;base64,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",
+      "title": "Bella Pro Series - 20-Cup Rice Cooke",
+      "price": "$24.99",
+      "stprice": "$69.99",
+      "Section": "Deal of the day"
+    },
+    {
+      "id": 5,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401722_sd.jpg;maxHeight=272;maxWidth=400",
+      "title": "Samsung - 65 Class 7 Series LED 4K UHD Smart Tizen TV",
+      "price": "$499.99",
+      "stprice": "$549.99The previous price for this item was $549.99",
+      "Section": "Trending"
+    },
+    {
+      "id": 6,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450853_sd.jpg;maxHeight=272;maxWidth=400",
+      "title": "MacBook Pro 14 Laptop - Apple M1 Pro chip - 16GB Memory - 512GB SSD (Latest Model) -",
+      "price": "$1,599.00",
+      "stprice": "$1,999.00",
+      "Section": "Trending"
+    },
+    {
+      "id": 7,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509962_sd.jpg;maxHeight=272;maxWidth=400",
+      "title": "Google - Pixel 6a 128GB (Unlocked) - Charcoal",
+      "price": "$349.00",
+      "stprice": "",
+      "Section": "Trending"
+    },
+    {
+      "id": 8,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6441/6441423_sd.jpg;maxHeight=272;maxWidth=400",
+      "title": "Ring - Video Doorbell - Venetian Bronze",
+      "price": "$69.99",
+      "stprice": "$99.99",
+      "Section": "Trending"
+    },
+    {
+      "id": 9,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6492/6492906cv11d.jpg;maxHeight=272;maxWidth=400",
+      "title": "Samsung - Galaxy Tab A8 10.5 32GB (Latest Model) - Wi-Fi - Gray",
+      "price": "$159.99",
+      "stprice": "$229.99",
+      "Section": "Trending"
+    },
+    {
+      "id": 10,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502179_sd.jpg;maxHeight=272;maxWidth=400",
+      "title": "HP - ENVY x360 2-in-1 15.6 Touch-Screen Laptop - Intel Evo Platform Intel Core i7 - 16GB",
+      "price": "$849.99",
+      "stprice": "$1,099.99",
+      "Section": "Trending"
+    },
+    {
+      "id": 11,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6448/6448758_sd.jpg;maxHeight=272;maxWidth=400",
+      "title": "Insignia™ - 43 Class F30 Series LED 4K UHD Smart Fire TV",
+      "price": "$199.99",
+      "stprice": "$299.99",
+      "Section": "best-selling"
+    },
+    {
+      "id": 12,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500335_sd.jpg;maxHeight=272;maxWidth=400",
+      "title": "Lenovo - Chromebook 3 11.6 HD Laptop - Celeron N4020 - 4GB Memory - 64GB eMMC - Onyx",
+      "price": "$139.00",
+      "stprice": "",
+      "Section": "best-selling"
+    },
+    {
+      "id": 13,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509757_sd.jpg;maxHeight=272;maxWidth=400",
+      "title": "Doctor Strange in the Multiverse of Madness [SteelBook][Digital Copy] [4K Ultra HD Blu-ray/Blu-",
+      "price": "$34.99",
+      "stprice": "",
+      "Section": "best-selling"
+    },
+    {
+      "id": 14,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6472/6472653_rd.jpg;maxHeight=272;maxWidth=400",
+      "title": "ZAGG - InvisibleShield Glass+ Defense Screen Protector for Apple iPhone 13/13 Pro",
+      "price": "$24.99",
+      "stprice": "",
+      "Section": "best-selling"
+    },
+    {
+      "id": 15,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6361/6361905_sd.jpg;maxHeight=272;maxWidth=400",
+      "title": "OtterBox - Commuter Series Case for Apple® iPhone® 11/XR - Black",
+      "price": "$39.99",
+      "stprice": "",
+      "Section": "best-selling"
+    },
+    {
+      "id": 16,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406935_sa.jpg;maxHeight=272;maxWidth=400",
+      "title": "Best Buy Totaltech™ Yearly Membership",
+      "price": "$199.99",
+      "stprice": "",
+      "Section": "best-selling"
+    },
+    {
+      "id": 17,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6424/6424707_sd.jpg;maxHeight=240;maxWidth=240",
+      "title": "KitchenAid - Pro 5 Plus 5 Quart Bowl-Lift Stand Mixer - Ink Blue",
+      "price": "$299.99",
+      "stprice": "$449.99",
+      "Section": "holiday-gather"
+    },
+    {
+      "id": 18,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6395/6395884_sd.jpg;maxHeight=240;maxWidth=240",
+      "title": "Ninja - Professional Plus Kitchen System with Auto-iQ -",
+      "price": "$219.99",
+      "stprice": "",
+      "Section": "holiday-gather"
+    },
+    {
+      "id": 19,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6513/6513689cv1d.jpg;maxHeight=240;maxWidth=240",
+      "title": "Breville - the Barista Express Impress - Brushed Stainless Stee",
+      "price": "",
+      "stprice": "$899.95",
+      "Section": "holiday-gather"
+    },
+    {
+      "id": 20,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6362/6362515_sd.jpg;maxHeight=240;maxWidth=240",
+      "title": "Breville - 1.1 Cu. Ft. Convection Microwave - Brushed stainless",
+      "price": "$499.99",
+      "stprice": "",
+      "Section": "holiday-gather"
+    },
+    {
+      "id": 21,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6355/6355794_sd.jpg;maxHeight=240;maxWidth=240",
+      "title": "Bella Pro Series - 8-qt. Digital Air Fryer - Stainless Steel",
+      "price": "$129.99",
+      "stprice": "",
+      "Section": "holiday-gather"
+    },
+    {
+      "id": 22,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6492/6492924_sd.jpg;maxHeight=240;maxWidth=240",
+      "title": "Café Couture Smart Toaster Oven with Air Fry - Stainless Steel",
+      "price": "$449.00",
+      "stprice": "",
+      "Section": "holiday-gather"
+    },
+    {
+      "id": 23,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367865_rd.jpg;maxHeight=240;maxWidth=240",
+      "title": "Instant Pot - 8 Quart Duo Crisp 11-in-1 Electric Pressure",
+      "price": "$179.99",
+      "stprice": "$199.99",
+      "Section": "holiday-gather"
+    },
+    {
+      "id": 24,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6408/6408648_sd.jpg;maxHeight=240;maxWidth=240",
+      "title": "GE Profile - Opal 2.0 24-lb. Portable Ice maker with Nugget Ice",
+      "price": "$579.99",
+      "stprice": "$629.99",
+      "Section": "holiday-gather"
+    },
+    {
+      "id": 25,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501591_sd.jpg;maxHeight=150;maxWidth=225",
+      "title": "Samsung - Galaxy Book2 Pro 360 15.6 AMOLED Touch Screen Laptop - Intel 12th",
+      "price": "$1,249.99",
+      "stprice": "$1,449.99",
+      "Section": "featured-products"
+    },
+    {
+      "id": 26,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450560_sd.jpg;maxHeight=150;maxWidth=225",
+      "title": "Samsung - Galaxy Chromebook 2 - 13.3 QLED Touch-Screen - Intel Celeron",
+      "price": "$549.00",
+      "stprice": "",
+      "Section": "featured-products"
+    },
+    {
+      "id": 27,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6460/6460365_sd.jpg;maxHeight=150;maxWidth=225",
+      "title": "ASUS - Zenbook 14 Laptop - AMD Ryzen 5 - 8GB Memory - NVIDIA GeForce MX450 -",
+      "price": "$400.99",
+      "stprice": "",
+      "Section": "featured-products"
+    },
+    {
+      "id": 28,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6449/6449514_sd.jpg;maxHeight=150;maxWidth=225",
+      "title": "ASUS - 2-in-1 15.6 Touch-Screen Chromebook - Intel Core 11th Gen i3 - 8GB",
+      "price": "$369.99",
+      "stprice": "",
+      "Section": "featured-products"
+    },
+    {
+      "id": 29,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6416/6416171_sd.jpg;maxHeight=150;maxWidth=225",
+      "title": "Samsung - 4.5 Cu. Ft. High Efficiency Stackable Front Load Washer with Vibration",
+      "price": "$679.99",
+      "stprice": "$854.99",
+      "Section": "featured-products"
+    },
+    {
+      "id": 30,
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6188/6188301_sd.jpg;maxHeight=150;maxWidth=225",
+      "title": "Uniden - R3 DSP Long Range Radar/Laser Detector - Matte Black",
+      "price": "$299.99",
+      "stprice": "",
+      "Section": "featured-products"
+    }
+  ]
+}
