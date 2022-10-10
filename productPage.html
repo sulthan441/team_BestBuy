@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <style>
+      .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 20px;
+      }
+      .someMoreInfo summary {
+        font-size: 22px;
+        font-weight: bolder;
+      }
+      #description hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      #similarProducts {
+        float: left;
+      }
+      #similarProduct {
+        gap: 20px;
+        display: flex;
+        width: 70%;
+        justify-content: space-around;
+        overflow-x: auto;
+        text-align: center;
+      }
+      /* #similarProduct a {
+      } */
+      #similarProduct img + p {
+        font-weight: bold;
+      }
+      #similarProduct img {
+        width: 250px;
+      }
+      #similarProduct p:nth-child(even) {
+        font-size: 20px;
+        color: #0457c8;
+      }
+      #similarProduct p:nth-child(odd) {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="productDetail"></div>
+    <div id="description">
+      <div>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Overview</summary>
+          <div class="info">
+            <p>Description</p>
+            <p>
+              The new MacBook Pro delivers game-changing performance for pro
+              users. With the powerful M1 Pro to supercharge pro-level workflows
+              while getting amazing battery life.¹ And with an immersive 14-inch
+              Liquid Retina XDR display and an array of pro ports, you can do
+              more than ever with MacBook Pro.
+            </p>
+          </div>
+          <div class="info">
+            <p>Features</p>
+            <p>
+              Apple M1 Pro or M1 Max chip for a massive leap in CPU, GPU, and
+              machine learning performance Up to 10-core CPU delivers up to 3.7x
+              faster performance to fly through pro workflows quicker than ever³
+              Up to 32-core GPU with up to 13x faster performance for
+              graphics-intensive apps and games³ 16-core Neural Engine for up to
+              11x faster machine learning performance³ Longer battery life, up
+              to 17 hours¹ Up to 64GB of unified memory so everything you do is
+              fast and fluid Up to 8TB of superfast SSD storage launches apps
+              and opens files in an instant Stunning 14-inch Liquid Retina XDR
+              display with extreme dynamic range and contrast ratio² 1080p
+              FaceTime HD camera with advanced image signal processor for
+              sharper video calls Six-speaker sound system with force-cancelling
+              woofers Studio-quality three-microphone array captures your voice
+              more clearly Three Thunderbolt 4 ports, HDMI port, SDXC card slot,
+              headphone jack, MagSafe 3 port Next-generation Wi-Fi 6 for faster
+              connectivity Backlit Magic Keyboard with Touch ID for secure
+              unlock and payments macOS Monterey lets you connect, share, and
+              create like never before, with exciting new FaceTime updates and a
+              redesigned Safari Available in space gray and silver Configurable
+              options are available. ¹Battery life varies by use and
+              configuration. See apple.com/batteries for more information. ²The
+              display on the 14-inch MacBook Pro has rounded corners at the top.
+              When measured as a standard rectangular shape, the screen is 14.2
+              inches diagonally (actual viewable area is less). ³Compared with
+              previous generation.
+            </p>
+          </div>
+        </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Specifications</summary>
+          <div class="info">
+            <p></p>
+            <p></p>
+          </div>
+        </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Compare Similar Items</summary>
+          <div class="info">
+            <p></p>
+            <p></p>
+          </div>
+        </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Reviews</summary>
+          <div class="info">
+            <p></p>
+            <p></p>
+          </div>
+        </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Question & Ans</summary>
+          <div class="info">
+            <p></p>
+            <p></p>
+          </div>
+        </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Reviews</summary>
+          <div class="info">
+            <p></p>
+            <p></p>
+          </div>
+        </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Buying Options</summary>
+          <div class="info">
+            <p></p>
+            <p></p>
+          </div>
+        </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>From the Manufacturer</summary>
+          <div class="info">
+            <p></p>
+            <p></p>
+          </div>
+        </details>
+      </div>
+      <hr />
+    </div>
+    <div id="saveMore">
+      <h2>Complete your purchase</h2>
+    </div>
+    <div id="alsoBought">
+      <h2>People also bought</h2>
+    </div>
+    <div id="mostViewed">
+      <h2>Most viewed sponsored products</h2>
+    </div>
+    <div id="similarProducts">
+      <h2>Similar products from outside of Best Buy</h2>
+      <div id="similarProduct">
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="bottomContainer"></div>
+  </body>
+</html>
