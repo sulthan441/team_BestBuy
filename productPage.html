@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Page</title>
     <style>
+      #productDetail {
+        display: flex;
+      }
+      #productDetail > div:last-child {
+        display: flex;
+      }
+      #productDetail > div:last-child > div:nth-child(3) {
+        height: max-content;
+        border-left: 3px solid #c5cbd5;
+      }
       .info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -21,6 +31,7 @@
       }
       a {
         text-decoration: none;
+        color: #0457c8;
       }
       a:hover {
         text-decoration: underline;
@@ -56,7 +67,88 @@
     </style>
   </head>
   <body>
-    <div id="productDetail"></div>
+    <div id="productDetail">
+      <div>
+        <div>
+          <a href="">Best Buy</a>
+          <a href=""> All Categories</a>
+          <a href="">Product</a>
+          <a href=""></a>
+        </div>
+        <div>
+          <h1>
+            MacBook Pro 14" Laptop - Apple M1 Pro chip - 16GB Memory - 512GB SSD
+            (Latest Model) - Space Gray
+          </h1>
+          <div>
+            <h4>Model: <span> MKGP3LL/A</span></h4>
+            <h4>SKU: <span> 6450853</span></h4>
+          </div>
+          <div>
+            <span>Rating</span>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h1>$1999.00</h1>
+          <div>
+            <h3>Configure your Mac</h3>
+            <label for="">Total Storage Capacity</label>
+            <select name="" id="">
+              <option value="">256GB</option>
+              <option value="">512GB</option>
+              <option value="">1TB</option>
+            </select>
+            <a href="">How much storage do I need?</a>
+            <label for="">Graphics</label>
+            <select name="" id="">
+              <option value="">HDD Graphics</option>
+              <option value="">PENTIUM Graphics</option>
+            </select>
+            <a href="">What's the right graphics card for me?</a>
+          </div>
+          <div>
+            <p style="font-weight: bolder">Color: <span>White</span></p>
+          </div>
+          <a href="">See All Specifications</a>
+          <hr />
+          <p style="font-weight: bolder">
+            See it in-store: <a href="">Aiea</a
+            ><span>has a demo model on display</span>
+          </p>
+          <hr />
+          <button>Add to Cart</button>
+          <button>Build A Bundle</button>
+          <div>
+            <input type="checkbox" name="" id="" /><label for="">Campare</label>
+            <a href="">Save</a>
+          </div>
+        </div>
+        <div></div>
+        <div>
+          <details open>
+            <summary>More to consider</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+              necessitatibus, perspiciatis inventore dolores quas, molestiae
+              optio omnis at asperiores obcaecati quae dolor quos? Nulla fuga
+              eaque reprehenderit ipsa laudantium iure.
+            </p>
+          </details>
+          <details>
+            <summary>People also bought</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+              necessitatibus, perspiciatis inventore dolores quas, molestiae
+              optio omnis at asperiores obcaecati quae dolor quos? Nulla fuga
+              eaque reprehenderit ipsa laudantium iure.
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
     <div id="description">
       <div>
         <hr />
@@ -170,6 +262,26 @@
     </div>
     <div id="mostViewed">
       <h2>Most viewed sponsored products</h2>
+      <div id="viewedProducts">
+        <div class="viewproducts">
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+          <div class="viewItem"></div>
+        </div>
+      </div>
     </div>
     <div id="similarProducts">
       <h2>Similar products from outside of Best Buy</h2>
