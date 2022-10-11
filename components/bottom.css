@@ -6,6 +6,10 @@
     color: #0457c8;
     margin: 10px 0px 0px 8px;
   }
+  #bottomContainer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
   #bottomContainer > div {
     width: 90%;
     margin: auto;

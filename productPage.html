@@ -5,21 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Page</title>
-    <style>
+    <link rel="stylesheet" href="./components/bottom.css" />
+    <link rel="stylesheet" href="./CSS files/productPage.css" />
+    <!-- <style>
+      /* hr {
+        margin: 50px 0px;
+      } */
+      hr:first-child {
+        margin-top: 50px;
+        margin-bottom: 60px;
+      }
       #productDetail {
         display: flex;
       }
+      #productDetail {
+        border: 6px solid crimson;
+        /* height: min-content;
+        overflow: scroll; */
+      }
+      #productDetail > div {
+        border: 10px dashed yellow;
+        height: fit-content;
+      }
       #productDetail > div:last-child {
         display: flex;
+        border: 3px solid red;
       }
       #productDetail > div:last-child > div:nth-child(3) {
         height: max-content;
         border-left: 3px solid #c5cbd5;
       }
+      #productDetail > div > div:first-child {
+        display: flex;
+        gap: 20px;
+        border: 2px solid salmon;
+      }
+      #productDetail > div > div:nth-child(2) > div {
+        border: 2px solid teal;
+        display: flex;
+        gap: 20px;
+      }
+      #productDetail > div > div:nth-child(2) > div > a {
+        /* background-color: black; */
+        padding-left: 8px;
+        border-left: 2px solid #c5cbd5;
+      }
+      #productDetail > div:nth-child(2) > div {
+        display: grid;
+        border: 3px solid blue;
+      }
+      #productDetail > div:nth-child(2) > div:first-child {
+        border: 5px dashed green;
+        height: fit-content;
+      }
       .info {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         font-size: 20px;
+      }
+      details > #viewedProducts {
+        border: 5px dashed black;
+        display: grid;
+        /* justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 70%; */
+      }
+      .viewItemS {
+        border-bottom: 1px solid #c5cbd5;
+        margin: 2px 5px;
+        /* text-align: center; */
+        text-align: justify;
+      }
+      .viewItemS > button {
+        width: 96%;
+        margin: auto;
+        margin-bottom: 2px;
+      }
+      details > #viewedProducts > div {
+        display: grid;
       }
       .someMoreInfo summary {
         font-size: 22px;
@@ -36,8 +100,72 @@
       a:hover {
         text-decoration: underline;
       }
+      /* Most Viewed Products */
+      #viewedProducts {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 70%;
+      }
+
+      .viewproducts {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        width: 100%;
+        margin: 1px;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 2px;
+      }
+      #viewedProducts > button {
+        height: 20px;
+        width: 20px;
+        color: #2b71d1;
+        border: none;
+        background-color: white;
+        font-size: 50px;
+        padding-right: 40px;
+      }
+      .viewItem {
+        width: 25%;
+        border-right: 1px solid #e0e6ef;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        display: inline-block;
+        padding: 2px;
+        margin: 5px 20px;
+        overflow: hidden;
+        color: #2b71d1;
+      }
+      .viewItem > button {
+        color: #2b71d1;
+        width: 90%;
+        margin: auto;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        border-color: #2b71d1;
+        padding: 9px;
+        background-color: white;
+      }
+      .viewItem > img {
+        width: 80%;
+        margin: auto;
+      }
+      .viewItem h5 {
+        margin-top: -10px;
+        font-size: 19px;
+        color: black;
+      }
+
+      /* Similar Products */
       #similarProducts {
         float: left;
+        margin-bottom: 50px;
+        border: 4px solid teal;
       }
       #similarProduct {
         gap: 20px;
@@ -64,15 +192,26 @@
         color: black;
         font-weight: bold;
       }
-    </style>
+
+      /* Bottom */
+      #bottomContainer {
+        margin-top: 70px;
+        height: fit-content;
+        border: 5px dashed crimson;
+        padding-top: 50px;
+      }
+    </style> -->
   </head>
   <body>
+    <hr />
     <div id="productDetail">
       <div>
         <div>
-          <a href="">Best Buy</a>
-          <a href=""> All Categories</a>
-          <a href="">Product</a>
+          <a href="index.html">Best Buy</a>
+          <span style="font-weight: 1000; font-size: larger">></span>
+          <a href="index.html"> All Categories</a>
+          <span style="font-weight: 1000; font-size: larger">></span>
+          <a href="productPage.html">Product</a>
           <a href=""></a>
         </div>
         <div>
@@ -81,12 +220,23 @@
             (Latest Model) - Space Gray
           </h1>
           <div>
-            <h4>Model: <span> MKGP3LL/A</span></h4>
-            <h4>SKU: <span> 6450853</span></h4>
+            <p style="font-weight: bold">
+              Model: <span style="font-weight: 100"> MKGP3LL/A</span>
+            </p>
+            <p style="font-weight: bold">
+              SKU: <span style="font-weight: 100"> 6450853</span>
+            </p>
           </div>
           <div>
-            <span>Rating</span>
-            <br />
+            <span>Rating: <a href="">4.8 (12,460 Reviews)</a></span>
+            <a href="">24 Expert Reviews</a>
+            <a href="">372 Answered Question</a>
+          </div>
+          <div>
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6418/6418597_sd.jpg;maxHeight=640;maxWidth=550"
+              alt="img"
+            />
           </div>
         </div>
       </div>
@@ -130,21 +280,80 @@
         <div>
           <details open>
             <summary>More to consider</summary>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-              necessitatibus, perspiciatis inventore dolores quas, molestiae
-              optio omnis at asperiores obcaecati quae dolor quos? Nulla fuga
-              eaque reprehenderit ipsa laudantium iure.
-            </p>
+            <div id="viewedProduct">
+              <div class="viewproductsS">
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button>Add to Cart</button>
+                </div>
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button>Add to Cart</button>
+                </div>
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button>Add to Cart</button>
+                </div>
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>4Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </div>
           </details>
           <details>
             <summary>People also bought</summary>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-              necessitatibus, perspiciatis inventore dolores quas, molestiae
-              optio omnis at asperiores obcaecati quae dolor quos? Nulla fuga
-              eaque reprehenderit ipsa laudantium iure.
-            </p>
+            <div id="viewedProductS">
+              <div class="viewproductsS">
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button>Add to Cart</button>
+                </div>
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button>Add to Cart</button>
+                </div>
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button>Add to Cart</button>
+                </div>
+              </div>
+            </div>
           </details>
         </div>
       </div>
@@ -256,31 +465,175 @@
     </div>
     <div id="saveMore">
       <h2>Complete your purchase</h2>
+      <hr />
     </div>
     <div id="alsoBought">
       <h2>People also bought</h2>
+      <hr />
+      <div id="alsoBughtProducts">
+        <div id="viewedProducts">
+          <button id="left-button"><</button>
+          <div class="viewproducts" id="content">
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button>Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button>Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button>Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>4Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button>Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>5Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button>Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>6Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button>Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>7Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button>Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>8Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+          <!-- <div class="right"> -->
+          <button id="right-button">></button>
+          <!-- right div -->
+          <!-- </div> -->
+        </div>
+      </div>
     </div>
     <div id="mostViewed">
       <h2>Most viewed sponsored products</h2>
+      <hr />
       <div id="viewedProducts">
-        <div class="viewproducts">
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
-          <div class="viewItem"></div>
+        <button id="left-button1"><</button>
+        <div class="viewproducts" id="content1">
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button>Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button>Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button>Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>4Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button>Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>5Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button>Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>6Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button>Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>7Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button>Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>8Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button>Add to Cart</button>
+          </div>
         </div>
+        <button id="right-button1">></button>
       </div>
     </div>
     <div id="similarProducts">
@@ -365,6 +718,41 @@
         </a>
       </div>
     </div>
+    <hr style="visibility: hidden" />
     <div id="bottomContainer"></div>
   </body>
 </html>
+
+<script type="module">
+  import bottom from "./components/bottom.js";
+  document.querySelector("#bottomContainer").innerHTML = bottom();
+</script>
+
+<script>
+  const rightBtn = document.querySelector("#right-button");
+  const rightBtn1 = document.querySelector("#right-button1");
+  const leftBtn = document.querySelector("#left-button");
+  const leftBtn1 = document.querySelector("#left-button1");
+
+  rightBtn.addEventListener("click", function (event) {
+    const conent = document.querySelector("#content");
+    conent.scrollLeft += 220;
+    event.preventDefault();
+  });
+  rightBtn1.addEventListener("click", function (event) {
+    const conent = document.querySelector("#content1");
+    conent.scrollLeft += 220;
+    event.preventDefault();
+  });
+
+  leftBtn.addEventListener("click", function (event) {
+    const conent = document.querySelector("#content");
+    conent.scrollLeft -= 220;
+    event.preventDefault();
+  });
+  leftBtn1.addEventListener("click", function (event) {
+    const conent = document.querySelector("#content1");
+    conent.scrollLeft -= 220;
+    event.preventDefault();
+  });
+</script>
