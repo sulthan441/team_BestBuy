@@ -1,0 +1,70 @@
+{
+    "Dod-Data": [
+        {
+            "id": 0,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412317_sd.jpg;maxHeight=640;maxWidth=550",
+            "title": "Bella Pro Series - 4-qt. Digital Air Fryer - Matte Black",
+            "Pickup": "Choose a store for pickup availability",
+            "Shipping": "Enter zip code for shipping availability",
+            "price": "$24.99",
+            "stprice": "$69.99",
+            "Section": "top"
+        },
+        {
+            "id": 1,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6361/6361879_sd.jpg;maxHeight=640;maxWidth=550",
+            "title": "Garmin - fēnix 6X Pro GPS Smartwatch 51mm Fiber-Reinforced Polymer - Black",
+            "price": "$599.99",
+            "stprice": "$899.99",
+            "Section": "bottom"
+        },
+        {
+            "id": 2,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5463/5463201cv11d.jpg;maxHeight=640;maxWidth=550",
+            "title": "Sanus - Premium Series Super Slim Full-Motion TV Wall Mount for Most TVs 40-84 up to 125 lbs - Black",
+            "price": "$179.99",
+            "stprice": "$299.99",
+            "Section": "bottom"
+        },
+        {
+            "id": 3,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6409/6409628_rd.jpg;maxHeight=640;maxWidth=550",
+            "title": "Insignia™ - 3 Gal. Automatic Trash Can - Stainless steel",
+            "price": "$24.99",
+            "stprice": "$39.99",
+            "Section": "bottom"
+        },
+        {
+            "id": 4,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6415/6415302_rd.jpg;maxHeight=640;maxWidth=550",
+            "title": "Bella - 16-Cup Manual Rice Cooker - Black",
+            "price": "$12.99",
+            "stprice": "$24.99",
+            "Section": "bottom"
+        },
+        {
+            "id": 5,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464759cv11d.jpg;maxHeight=640;maxWidth=550",
+            "title": "Bella Pro Series - 14-Piece Cookware Set - Black",
+            "price": "$59.99",
+            "stprice": "$199.99",
+            "Section": "bottom"
+        },
+        {
+            "id": 6,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5856/5856600_sd.jpg;maxHeight=640;maxWidth=550",
+            "title": "Insignia™ - 0.9 Cu. Ft. Compact Microwave - Stainless steel",
+            "price": "$89.99",
+            "stprice": "",
+            "Section": "bottom"
+        },
+        {
+            "id": 7,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6465/6465542cv11d.jpg;maxHeight=640;maxWidth=550",
+            "title": "Total HomeFX - 1500 Outdoor Theater Kit with 72 Inflatable Screen - Black",
+            "price": "$449.99",
+            "stprice": "$599.99",
+            "Section": "bottom"
+        }
+    ]
+}

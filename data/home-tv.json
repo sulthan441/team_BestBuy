@@ -1,0 +1,49 @@
+{
+    "Home-Tv": [
+        {
+            "id": 1,
+            "image": "https://5.imimg.com/data5/AA/LL/HC/SELLER-47616313/50-inch-smart-4k-led-tv-500x500.jpeg",
+            "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/LG_4C_eps_renditionpicker_319x319-91903.png;maxHeight=70;maxWidth=120",
+            "title": "LG - 75 Class NanoCell 75UQA Series LED 4K UHD Smart webOS TV",
+            "price": "$979.99",
+            "stprice": "$1,299.99",
+            "Section": "tv"
+        },
+        {
+            "id": 2,
+            "image": "https://images.philips.com/is/image/PhilipsConsumer/58PUT7605_94-IMS-en_IN?$jpglarge$&wid=1250",
+            "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
+            "title": "Samsung - 70” Class 7 Series LED 4K UHD Smart Tizen TV",
+            "price": "$599.99",
+            "stprice": "$649.99",
+            "Section": "tv"
+        },
+        {
+            "id": 3,
+            "image": "https://static.digit.in/default/9ef46a05c3f4018ba3292ec74b158b3571ef6477.jpeg",
+            "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Samsung_4C_eps_renditionpicker_319x319-91889.png;maxHeight=70;maxWidth=120",
+            "title": "Samsung - 65” Class S95B OLED 4K Smart Tizen TV",
+            "price": "$1,999.99",
+            "stprice": "$2,999.99",
+            "Section": "tv"
+        },
+        {
+            "id": 4,
+            "image": "https://www.sathya.store/img/product/hO2Pd3HihtZh3IB6.webp",
+            "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Sony_NoR_K_RGB_ai_renditionpicker_319x319-91975.png;maxHeight=70;maxWidth=120",
+            "title": "Sony - 55 Class BRAVIA XR A80J Series OLED 4K UHD Smart Google TV",
+            "price": "$1,899.99",
+            "stprice": "",
+            "Section": "tv"
+        },
+        {
+            "id": 5,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6462/6462204_sd.jpg;maxHeight=640;maxWidth=550",
+            "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Sony_NoR_K_RGB_ai_renditionpicker_319x319-91975.png;maxHeight=70;maxWidth=120",
+            "title": "Sony - WF-1000XM4 True Wireless Noise Cancelling In-Ear Headphones - Black",
+            "price": "$249.99",
+            "stprice": "$279.99",
+            "Section": "tv"
+        }
+    ]
+}

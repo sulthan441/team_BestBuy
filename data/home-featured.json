@@ -1,0 +1,46 @@
+{
+    "Home-Featured": [
+        {
+            "id": 1,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501591_sd.jpg;maxHeight=150;maxWidth=225",
+            "title": "Samsung - Galaxy Book2 Pro 360 15.6 AMOLED Touch Screen Laptop - Intel 12th",
+            "price": "$1,249.99",
+            "Section": "featured-products"
+        },
+        {
+            "id": 2,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450560_sd.jpg;maxHeight=150;maxWidth=225",
+            "title": "Samsung - Galaxy Chromebook 2 - 13.3 QLED Touch-Screen - Intel Celeron",
+            "price": "$549.00",
+            "Section": "featured-products"
+        },
+        {
+            "id": 3,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6460/6460365_sd.jpg;maxHeight=150;maxWidth=225",
+            "title": "ASUS - Zenbook 14 Laptop - AMD Ryzen 5 - 8GB Memory - NVIDIA GeForce MX450 -",
+            "price": "$400.99",
+            "Section": "featured-products"
+        },
+        {
+            "id": 4,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6449/6449514_sd.jpg;maxHeight=150;maxWidth=225",
+            "title": "ASUS - 2-in-1 15.6 Touch-Screen Chromebook - Intel Core 11th Gen i3 - 8GB",
+            "price": "$369.99",
+            "Section": "featured-products"
+        },
+        {
+            "id": 5,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6416/6416171_sd.jpg;maxHeight=150;maxWidth=225",
+            "title": "Samsung - 4.5 Cu. Ft. High Efficiency Stackable Front Load Washer with Vibration",
+            "price": "$679.99",
+            "Section": "featured-products"
+        },
+        {
+            "id": 6,
+            "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6188/6188301_sd.jpg;maxHeight=150;maxWidth=225",
+            "title": "Uniden - R3 DSP Long Range Radar/Laser Detector - Matte Black",
+            "price": "$299.99",
+            "Section": "featured-products"
+        }
+    ]
+}
