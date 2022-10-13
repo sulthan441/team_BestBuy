@@ -76,25 +76,25 @@
                             <div class="form-input">
 
                                 <p class="input-field">
-                                    <input class="tb-input " type="text" autocomplete="off" id="firstName"
-                                         placeholder=" " value="">
+                                    <input class="tb-input firstName" type="text"  
+                                         placeholder=" " required>
                                     <label class="label">First Name</label>
                                 </p>
 
                                 <p class="input-field">
-                                    <input class="tb-input " type="text" autocomplete="off" id="lastName"
-                                         placeholder=" " value="">
+                                    <input class="tb-input lastName" type="text" 
+                                         placeholder=" " required>
                                     <label class="label">Last Name</label>
                                 </p>
 
                                 <p class="input-field">
-                                    <input class="tb-input " type="email" autocomplete="off" id="email"
-                                         placeholder=" " value="">
+                                    <input class="tb-input email" type="email" 
+                                         placeholder=" " required>
                                     <label class="label">Email Address</label>
                                 </p>
 
                                 <p class="input-field">
-                                    <input class="tb-input " type="password" placeholder=" " id="password">
+                                    <input class="tb-input password" type="password" placeholder=" " required >
                                     <label class="label">Password</label>
                                 </p>
                                 <p class="password-show">
@@ -105,29 +105,29 @@
                                 </p>
 
                                 <p class="input-field">
-                                    <input class="tb-input " type="password" id="repeat-password" placeholder=" ">
+                                    <input class="tb-input repeatPassword" type="password"  placeholder=" " required>
                                     <label class="label">Confirm Password</label>
                                 </p>
 
                                 <p class="input-field">
-                                    <input class="tb-input " type="number" id="mobilenumber" placeholder=" ">
+                                    <input class="tb-input mobileNumber" type="number"  placeholder=" " required>
                                     <label class="label">Mobile Phone Number</label>
                                 </p>
 
                                 <p class="input-field account-recovery">
-                                    <input class="tb-input " type="checkbox" id="phone-check" placeholder=" ">
+                                    <input class="tb-input " type="checkbox" id="phone-check" placeholder=" " required>
                                     <span style="font-size:15px;"> use for Account Recovery &nbsp; <i class="fa-solid fa-circle-info"></i></span> 
                                 </p>
 
                                 <div>
-                                    <button class="submit-btn" type="submit">Create an
+                                    <button class="submit-btn signup-btn" type="submit">Create an
                                         Account</button>
                                 </div>
                                 <div>
                                     <h3><span>or</span></h3>
                                 </div>
                                 <div>
-                                    <button type="button" class="login-with-google-btn"><i
+                                    <button type="button" class="login-with-google-btn signup-btn"><i
                                             class="fa-brands fa-google fa-2x"></i>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Up with Google
                                     </button>
@@ -170,11 +170,11 @@
     document.querySelector("#eye-2").addEventListener('click', togglePassword)
     function togglePassword() {
         event.preventDefault();
-        var type = document.getElementById("password").type;
+        var type = document.querySelector(".password").type;
         if (type == 'password') {
-            document.getElementById("password").type = "text";
+            document.querySelector(".password").type = "text";
         } else {
-            document.getElementById("password").type = "password";
+            document.querySelector(".password").type = "password";
         }
     }
 </script>
