@@ -191,7 +191,10 @@
         }
 
         #Account_DropDown {
+            margin: 10px;
+            margin-left: 870px;
             /* right: 10px; */
+            /* transition: 1.5s; */
             display: none;
             width: 24%;
             /* border: 1px solid black; */
@@ -206,6 +209,7 @@
             color: #0046be;
             font-size: 15px;
         }
+
         #top1,
         #top2,
         #top3,
@@ -216,12 +220,13 @@
             padding: 10px;
 
         }
+
         #top1>p {
             width: 90%;
             margin: auto;
         }
 
-        span {
+        #Account_DropDown span {
             font-size: 10px;
             color: black;
             padding-left: 120px;
@@ -232,25 +237,36 @@
             width: 75%;
             background-color: #0046be;
             color: white;
-            margin: auto;
-            padding: 5px;
-            border-radius: 8px;
+            margin-left: 40px;
+            /* margin: auto; */
+            padding: 2px;
+            border-radius: 5px;
             border: none;
+            margin-top: 10px;
             border: 1px solid #0046be;
             margin-bottom: 10px;
             cursor: pointer;
+            font-size: 13px;
+
+            font-weight: bold;
 
 
         }
 
         #create {
+            font-size: 13px;
+
+            font-weight: bold;
+
             cursor: pointer;
             width: 75%;
             background-color: #ffffff;
             color: #0046be;
-            margin: auto;
-            padding: 5px;
-            border-radius: 8px;
+            /* margin: auto; */
+            padding: 2px;
+            margin-left: 40px;
+
+            border-radius: 5px;
             border: 1px solid #0046be;
 
         }
@@ -262,9 +278,126 @@
             cursor: pointer;
             font-weight: bold;
         }
-        #acc+li:focus + #Account_DropDown{
-            display: block;
-        }
+        #menuDiv:hover{
+    cursor: pointer;
+}
+
+#menuBox{
+    top: 10%;
+    display: none;
+    width: 350px;
+    position: absolute;
+    height: 650px;
+    background-color: white;
+    /* border: 1px solid black; */
+    margin: 0 0 0 1.5%;
+    /* overflow: scroll; */
+    animation: .5s ease-in op ;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+
+#menuBox>div:nth-child(1)>div>div{
+    width: 90%;
+    font-size: 1vw;
+    color: #0046c4;
+    /* margin: 5% 0 0 5%; */
+    border-bottom: 1px solid #e0e6ef;
+    padding-bottom: 4%;
+    font-weight: 600;
+    
+}
+
+#menuBox>div>div{
+cursor: pointer;
+}
+
+#outerBox1{
+    /* background-color: black; */
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5% 0 0 5%; 
+}
+
+#menuBox>div:nth-child(1)>div:nth-child(1)>div>span{
+    font-size: 1vw;
+    margin: 0  0 0 79%;
+}
+
+#menuBox>div:nth-child(1)>div:nth-child(2)>div>span{
+    font-size: 1vw;
+    margin: 0  0 0 45%;
+}
+
+#menuBox>div:nth-child(1)>div:nth-child(3)>div>span{
+    font-size: 1vw;
+    margin: 0  0 0 74%;
+    /* text-align: right; */
+
+}
+
+#menuBox>div:nth-child(1)>div:nth-child(4)>div>span{
+    font-size: 1vw;
+    margin: 0  0 0 69%;
+}
+
+#outerBox2{
+    /* background-color: black; */
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5% 0 0 5%; 
+}
+
+#outerBox3{
+    /* background-color: black; */
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5% 0 0 5%; 
+}
+
+#outerBox4{
+    /* background-color: black; */
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5% 0 0 5%; 
+}
+
+#smallB{
+    width: 100%;
+    height: 15px;
+    background-color: rgb(244,246,249);
+    border-top: 1px solid rgb(197,203,213);
+}
+
+#spD{
+    
+    margin: 5% 10% 0 5%;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-bottom:1px solid #e0e6ef ;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+}
+
+.oB{
+    height: 50px;
+    box-sizing: border-box;
+    padding: 5% 0 0 5%; 
+}
+.oBDT{
+    font-size: 1vw;
+    font-weight: 500;
+}
+.oBDT:hover{
+    color: rgb(0,30,115);
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+#ap,#tv,.oBD,.oBD1{ 
+    display: flex;
+    justify-content: space-between;
+}
     </style>
 </head>
 
@@ -281,7 +414,7 @@
                             d="M 3 7 C 2.640625 6.996094 2.304688 7.183594 2.121094 7.496094 C 1.941406 7.808594 1.941406 8.191406 2.121094 8.503906 C 2.304688 8.816406 2.640625 9.003906 3 9 L 27 9 C 27.359375 9.003906 27.695312 8.816406 27.878906 8.503906 C 28.058594 8.191406 28.058594 7.808594 27.878906 7.496094 C 27.695312 7.183594 27.359375 6.996094 27 7 Z M 3 14 C 2.640625 13.996094 2.304688 14.183594 2.121094 14.496094 C 1.941406 14.808594 1.941406 15.191406 2.121094 15.503906 C 2.304688 15.816406 2.640625 16.003906 3 16 L 27 16 C 27.359375 16.003906 27.695312 15.816406 27.878906 15.503906 C 28.058594 15.191406 28.058594 14.808594 27.878906 14.496094 C 27.695312 14.183594 27.359375 13.996094 27 14 Z M 3 21 C 2.640625 20.996094 2.304688 21.183594 2.121094 21.496094 C 1.941406 21.808594 1.941406 22.191406 2.121094 22.503906 C 2.304688 22.816406 2.640625 23.003906 3 23 L 27 23 C 27.359375 23.003906 27.695312 22.816406 27.878906 22.503906 C 28.058594 22.191406 28.058594 21.808594 27.878906 21.496094 C 27.695312 21.183594 27.359375 20.996094 27 21 Z M 3 21 " />
                     </g>
                 </svg>
-                <p>Menu</p>
+                <p style="cursor: pointer;" onclick=showMenu()>Menu</p>
             </div>
             <div id="searchBar">
                 <input type="search" placeholder="Search Best Buy">
@@ -314,7 +447,7 @@
         </div>
         <div id="minRight">
             <ul style="list-style-type:none;">
-                <li><i class="fa-regular fa-user"></i>&nbsp Account &nbsp<i class="fa-sharp fa-solid fa-angle-down"></i>
+                <li id="acc" onclick=showDiv() style="cursor: pointer;" ><i class="fa-regular fa-user"></i>&nbsp Account &nbsp<i class="fa-sharp fa-solid fa-angle-down"></i>
                 </li>
                 <li>Recently Viewed&nbsp<i class="fa-sharp fa-solid fa-angle-down"></i></li>
                 <li>Order Status&nbsp<i class="fa-sharp fa-solid fa-angle-down"></i></li>
@@ -324,7 +457,7 @@
     </div>
     <div id="Account_DropDown">
         <div id="top1">
-            <p style="color: black">Becoming a My Best Buy®  member comes with
+            <p style="color: black;font-size: small; width: 70%;">Becoming a My Best Buy® member comes with
                 easy order tracking, rewards, offers and more..</p>
             <button id="signIn">Sign In</button><br>
             <button id="create">Create Account</button>
@@ -352,9 +485,157 @@
             <p><i class="fa-solid fa-xmark"></i>&nbsp;Close</p>
         </div>
     </div>
+    <div id="menuBox">
+
+        <div>
+            <div id="outerBox1">
+                <div class="menuHeadText" id="ch" >Deals 
+                    <span class="material-icons-outlined" >
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+                
+            </div>
+           
+            <div id="outerBox2">
+                <div class="menuHeadText" id="ch1">Support & Services
+                    <span class="material-icons-outlined">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="outerBox3">
+                <div class="menuHeadText" >Brands
+                    <span class="material-icons-outlined">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="outerBox4">
+                <div class="menuHeadText"> Featured
+                    <span class="material-icons-outlined">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div id="smallB">
+                 
+            </div>
+            <div id="spD">
+                Shop by Department
+            </div>
+
+            <div class="oB">
+                <div class="oBD"id="ap">
+                    <div class="oBDT" >
+                        Appliances
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oB">
+                <div class="oBD" id="tv">
+                    <div class="oBDT">
+                        TV & Home Theater
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="oB">
+                <div class="oBD">
+                    <div class="oBDT">
+                        Computers & Tablets
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oB">
+                <div class="oBD1">
+                    <div class="oBDT">
+                        Cameras, Camcorders & Drones
+                    </div>
+                    <div class="material-icons-outlined " id="fa123">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oB">
+                <div class="oBD">
+                    <div class="oBDT">
+                        Cell Phones
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oB">
+                <div class="oBD">
+                    <div class="oBDT">
+                        Audio
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oB">
+                <div class="oBD">
+                    <div class="oBDT">
+                        Video Games
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+
+    </div>
 </body>
 <script>
-    
+
+    //account
+    var x = document.getElementById("Account_DropDown");
+     x.style.display = "none";
+function showDiv() {
+    if(x.style.display=="none") {
+        x.style.transition= "2.2s";
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+
+//menu
+var y = document.getElementById("menuBox");
+     y.style.display = "none";
+function showMenu() {
+    if(y.style.display=="none") {
+        y.style.transition= "2.2s";
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+}
+
 </script>
 
 </html>
