@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+    <div id="outerBox">
+        <div id="cart-item-box">
+            <div id="inner-div">
+                <div id="title">Your Cart</div>
+
+                <!-- appending all prod -->
+                <div id="product-card"></div>
+
+
+            </div>
+
+        </div>
+
+
+        <div id="checkout-box">
+            <div id="checkout-title">
+                Order Summary
+            </div>
+
+            <div class="ckt-details">
+                <div>
+                    Original Price
+                </div>
+                <div id="totalOP" class="side-details"></div>
+            </div>
+
+            <div class="ckt-details">
+                <div>
+                    Savings
+                </div>
+                <div id="totalSaving" class="side-details"></div>
+            </div>
+
+            <div class="ckt-details">
+                <div>
+                    Store Pickup
+                </div>
+                <div class="side-details">
+                    FREE
+                </div>
+            </div>
+
+            <div class="ckt-details">
+                <div class="tax">
+                    Estimated Sales Tax
+                </div>
+                <div class="side-details">
+                    $41.46
+                </div>
+            </div>
+
+            <hr class="osLine">
+
+            <div class="total-amt">
+                <div>
+                    Total
+                </div>
+                <div id="cart-total" class="side-details">
+
+                </div>
+            </div>
+
+            <div id="checkout-btn">
+                Checkout
+            </div>
+            <hr>
+            <div id="PP-btn">
+                <span id="cP">Pay Pal</span> &nbsp; Checkout
+            </div>
+            <hr>
+        </div>
+
+
+    </div>
 </body>
+
 </html>
+<script src="./index.js"></script>
