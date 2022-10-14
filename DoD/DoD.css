@@ -43,11 +43,8 @@ h1 {
 
 #box2 {
     display: grid;
-    grid-template-columns: repeat(4, 23%);
-    margin-bottom: 50px;
-    height: 400px;
-    width: 100%;
-    border: 2px solid red;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 
 }
 
@@ -107,8 +104,8 @@ button {
 
 #b4_1,
 #b4_2 {
-    display: flex;
-    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
     text-align: center;
     margin-left: 30px;
 }

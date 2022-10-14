@@ -55,7 +55,7 @@
         </div>
         <hr />
         <div id="box2">
-            <h1>Append Data Here</h1>
+
         </div>
 
         <hr>
@@ -111,51 +111,10 @@
                 </div>
             </div>
             <hr>
-            <h6>Trending now (15 items)</h6>
+            <h5>Deals For You (15 items)</h5>
             <hr>
             <div id="b4_2">
-                <div>
-                    <img
-                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6485/6485757cv4d.jpg;maxHeight=100;maxWidth=200">
-                    <p>PC Gaming</p>
-                </div>
-                <div>
-                    <img
-                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6347/6347611_rd.jpg;maxHeight=100;maxWidth=200">
-                    <p>Baby Care</p>
-                </div>
-                <div>
-                    <img
-                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6288/6288538_sd.jpg;maxHeight=100;maxWidth=200">
-                    <p>Sound Bars & Speakers</p>
-                </div>
-                <div>
-                    <img
-                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6213/6213100_sd.jpg;maxHeight=100;maxWidth=200">
-                    <p>Cameras & Camcorders</p>
-                </div>
-                <div>
-                    <img
-                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452032_sd.jpg;maxHeight=100;maxWidth=200">
-                    <p>Wearable Technology</p>
-                </div>
-                <div>
-                    <img
-                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6492/6492872cv1d.jpg;maxHeight=100;maxWidth=200">
-                    <p>Smart Home & Networking</p>
-                </div>
-                <div>
-                    <img
-                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5888/5888542_rd.jpg;maxHeight=100;maxWidth=200">
-                    <p>Health & Streaming Media Players</p>
-                </div>
-                <div>
-                    <img
-                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6407/6407922_sd.jpg;maxHeight=100;maxWidth=200">
-                    <p>Home & Outdoor</p>
-                </div>
-                <div>
-                </div>
+
             </div>
             <hr>
             <div id="box3">
@@ -209,33 +168,8 @@
             </div>
         </div>
         <div id="footer"></div>
+
 </body>
 
 </html>
-<script src="deal.js"></script>
-
-<script type="module">
-    import Footer from "../landing page/Components/Footer.js";
-    console.log(Footer);
-    var box = document.querySelector("#footer");
-    box.innerHTML = Footer();
-</script>
-
-
-<script type="module">
-
-    import header from "../landing page/Components/Header.js";
-    var headerdata = document.querySelector("#header");
-    headerdata.innerHTML = header();
-    let dealoftheday = document.querySelector("#lowbox1b")
-    dealoftheday.addEventListener("click", gotodealofday)
-    function gotodealofday() {
-        window.location.href = "../DealDay/deal.html";
-    }
-
-    let topdeals = document.querySelector("#lowbox1a")
-    topdeals.addEventListener("click", gototopdeals)
-    function gototopdeals() {
-        window.location.href = "../topdeal.html";
-    }
-</script>
+<script src="DoD.js"></script>
