@@ -1,10 +1,15 @@
+#nav-main {
+  background-color: #0046be;
+}
 #nav {
+  width: 65%;
   height: 70px;
   display: flex;
   background-color: #0046be;
-  justify-content: space-around;
+  justify-content: space-between;
   color: white;
   align-items: center;
+  margin: auto;
 }
 #nav-left > div > img {
   width: 130px;
