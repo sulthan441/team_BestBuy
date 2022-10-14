@@ -1,8 +1,11 @@
+
 async function Display() {
     let response = await fetch("https://api.jsonbin.io/v3/b/6349b6a765b57a31e69678fe");
     let data = await response.json();
     //console.log(data.record.DoD_Data);
     appendData(data.record.DoD_Data);
+    appendData2(data.record.DoD_Slider);
+
 
 }
 Display();
@@ -41,39 +44,34 @@ function appendData(data) {
 
     }
 
+
 }
 
 // bottom section
-async function DisplaySlider() {
-    let response = await fetch("https://api.jsonbin.io/v3/b/6349b6a765b57a31e69678fe");
-    let data2 = await response.json();
-    console.log(data2.record.DoD_Slider);
-    //appendData2(data2.record.DoD_Sllider);
+
+
+function appendData2(data) {
+    document.getElementById("b4_2").innerHTML = null;
+    data.forEach(element => {
+        let div2 = document.createElement("div");
+        let image2 = document.createElement("img");
+        image2.src = element.image;
+        image2.setAttribute("id", "slideImg")
+        let span = document.createElement("h3");
+        span.innerHTML = element.span;
+        let details = document.createElement("h4");
+        details.innerHTML = element.details;
+
+        let btn2 = document.createElement("button");
+        btn2.innerText = "VIEW";
+        btn2.setAttribute("id", "btn")
+        btn2.addEventListener("click", function () {
+            alert("page is unavailable")
+        })
+
+        div2.append(image2, span, details, btn2);
+        document.getElementById("b4_2").append(div2);
+
+    });
 
 }
-DisplaySlider();
-
-// function appendData2(data2) {
-//     document.getElementById("b4_2").innerHTML = null;
-//     data2.forEach(element => {
-//         let div2 = document.createElement("div");
-//         let image2 = document.createElement("img");
-//         image2.src = element.image;
-//         let span = document.createElement("h3");
-//         span.innerHTML = element.span;
-//         let details = document.createElement("h4");
-//         details.innerHTML = element.details;
-
-//         // let btn2 = document.createElement("button");
-//         // btn2.innerText = "VIEW";
-//         // btn2.setAttribute("id", "btn")
-//         // btn2.addEventListener("click", function () {
-//         //     alert("page is unavailable")
-//         // })
-
-//         div2.append(image2, span, details);
-//         document.getElementById("b4_2").append(div2);
-
-//     });
-
-// }
