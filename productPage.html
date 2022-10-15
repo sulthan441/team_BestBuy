@@ -7,203 +7,10 @@
     <title>Product Page</title>
     <link rel="stylesheet" href="./components/bottom.css" />
     <link rel="stylesheet" href="./CSS files/productPage.css" />
-    <!-- <style>
-      /* hr {
-        margin: 50px 0px;
-      } */
-      hr:first-child {
-        margin-top: 50px;
-        margin-bottom: 60px;
-      }
-      #productDetail {
-        display: flex;
-      }
-      #productDetail {
-        border: 6px solid crimson;
-        /* height: min-content;
-        overflow: scroll; */
-      }
-      #productDetail > div {
-        border: 10px dashed yellow;
-        height: fit-content;
-      }
-      #productDetail > div:last-child {
-        display: flex;
-        border: 3px solid red;
-      }
-      #productDetail > div:last-child > div:nth-child(3) {
-        height: max-content;
-        border-left: 3px solid #c5cbd5;
-      }
-      #productDetail > div > div:first-child {
-        display: flex;
-        gap: 20px;
-        border: 2px solid salmon;
-      }
-      #productDetail > div > div:nth-child(2) > div {
-        border: 2px solid teal;
-        display: flex;
-        gap: 20px;
-      }
-      #productDetail > div > div:nth-child(2) > div > a {
-        /* background-color: black; */
-        padding-left: 8px;
-        border-left: 2px solid #c5cbd5;
-      }
-      #productDetail > div:nth-child(2) > div {
-        display: grid;
-        border: 3px solid blue;
-      }
-      #productDetail > div:nth-child(2) > div:first-child {
-        border: 5px dashed green;
-        height: fit-content;
-      }
-      .info {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        font-size: 20px;
-      }
-      details > #viewedProducts {
-        border: 5px dashed black;
-        display: grid;
-        /* justify-content: center;
-        justify-items: center;
-        align-items: center;
-        width: 70%; */
-      }
-      .viewItemS {
-        border-bottom: 1px solid #c5cbd5;
-        margin: 2px 5px;
-        /* text-align: center; */
-        text-align: justify;
-      }
-      .viewItemS > button {
-        width: 96%;
-        margin: auto;
-        margin-bottom: 2px;
-      }
-      details > #viewedProducts > div {
-        display: grid;
-      }
-      .someMoreInfo summary {
-        font-size: 22px;
-        font-weight: bolder;
-      }
-      #description hr {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-      a {
-        text-decoration: none;
-        color: #0457c8;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      /* Most Viewed Products */
-      #viewedProducts {
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        width: 70%;
-      }
-
-      .viewproducts {
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-        width: 100%;
-        margin: 1px;
-        overflow: hidden;
-        white-space: nowrap;
-        padding: 2px;
-      }
-      #viewedProducts > button {
-        height: 20px;
-        width: 20px;
-        color: #2b71d1;
-        border: none;
-        background-color: white;
-        font-size: 50px;
-        padding-right: 40px;
-      }
-      .viewItem {
-        width: 25%;
-        border-right: 1px solid #e0e6ef;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        display: inline-block;
-        padding: 2px;
-        margin: 5px 20px;
-        overflow: hidden;
-        color: #2b71d1;
-      }
-      .viewItem > button {
-        color: #2b71d1;
-        width: 90%;
-        margin: auto;
-        border-radius: 5px;
-        font-size: 14px;
-        font-weight: bold;
-        border-color: #2b71d1;
-        padding: 9px;
-        background-color: white;
-      }
-      .viewItem > img {
-        width: 80%;
-        margin: auto;
-      }
-      .viewItem h5 {
-        margin-top: -10px;
-        font-size: 19px;
-        color: black;
-      }
-
-      /* Similar Products */
-      #similarProducts {
-        float: left;
-        margin-bottom: 50px;
-        border: 4px solid teal;
-      }
-      #similarProduct {
-        gap: 20px;
-        display: flex;
-        width: 70%;
-        justify-content: space-around;
-        overflow-x: auto;
-        text-align: center;
-      }
-      /* #similarProduct a {
-      } */
-      #similarProduct img + p {
-        font-weight: bold;
-      }
-      #similarProduct img {
-        width: 250px;
-      }
-      #similarProduct p:nth-child(even) {
-        font-size: 20px;
-        color: #0457c8;
-      }
-      #similarProduct p:nth-child(odd) {
-        font-size: 20px;
-        color: black;
-        font-weight: bold;
-      }
-
-      /* Bottom */
-      #bottomContainer {
-        margin-top: 70px;
-        height: fit-content;
-        border: 5px dashed crimson;
-        padding-top: 50px;
-      }
-    </style> -->
   </head>
   <body>
     <hr />
+    <div id="container">
     <div id="productDetail">
       <div>
         <div>
@@ -244,24 +51,33 @@
         <div>
           <h1>$1999.00</h1>
           <div>
-            <h3>Configure your Mac</h3>
+            <div>
+              <h3>Configure your Device</h3>
+            </div>
             <label for="">Total Storage Capacity</label>
+            <br>
             <select name="" id="">
               <option value="">256GB</option>
               <option value="">512GB</option>
               <option value="">1TB</option>
             </select>
-            <a href="">How much storage do I need?</a>
+            <div>
+              <a href="">How much storage do I need?</a>
+            </div>
+            <br>
             <label for="">Graphics</label>
+            <br>
             <select name="" id="">
               <option value="">HDD Graphics</option>
               <option value="">PENTIUM Graphics</option>
             </select>
-            <a href="">What's the right graphics card for me?</a>
+            <div>
+              <a href="">What's the right graphics card for me?</a>
+            </div>
           </div>
-          <div>
+          <!-- <div>
             <p style="font-weight: bolder">Color: <span>White</span></p>
-          </div>
+          </div> -->
           <a href="">See All Specifications</a>
           <hr />
           <p style="font-weight: bolder">
@@ -269,10 +85,13 @@
             ><span>has a demo model on display</span>
           </p>
           <hr />
-          <button>Add to Cart</button>
-          <button>Build A Bundle</button>
+          <button id="cartButton" style="background-color: yellow;" >Add to Cart</button>
+          <button style="background-color: #0046be;">Build A Bundle</button>
           <div>
-            <input type="checkbox" name="" id="" /><label for="">Campare</label>
+            <div>
+              <input type="checkbox"/>
+              <label for="">Compare</label>
+            </div>
             <a href="">Save</a>
           </div>
         </div>
@@ -282,14 +101,14 @@
             <summary>More to consider</summary>
             <div id="viewedProduct">
               <div class="viewproductsS">
-                <div class="viewItemS">
+                <!-- <div class="viewItemS">
                   <img
                     src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
                     alt="logo"
                   />
                   <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
                   <h5>$999.99</h5>
-                  <button>Add to Cart</button>
+                  <button onclick="addToCart()" id="cartButton" >Add to Cart</button>
                 </div>
                 <div class="viewItemS">
                   <img
@@ -298,7 +117,7 @@
                   />
                   <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
                   <h5>$999.99</h5>
-                  <button>Add to Cart</button>
+                  <button id="cartButton" >Add to Cart</button>
                 </div>
                 <div class="viewItemS">
                   <img
@@ -307,7 +126,7 @@
                   />
                   <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
                   <h5>$999.99</h5>
-                  <button>Add to Cart</button>
+                  <button id="cartButton" >Add to Cart</button>
                 </div>
                 <div class="viewItemS">
                   <img
@@ -316,8 +135,8 @@
                   />
                   <p>4Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
                   <h5>$999.99</h5>
-                  <button>Add to Cart</button>
-                </div>
+                  <button id="cartButton" >Add to Cart</button>
+                </div> -->
               </div>
             </div>
           </details>
@@ -332,7 +151,7 @@
                   />
                   <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
                   <h5>$999.99</h5>
-                  <button>Add to Cart</button>
+                  <button id="cartButton" >Add to Cart</button>
                 </div>
                 <div class="viewItemS">
                   <img
@@ -341,7 +160,7 @@
                   />
                   <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
                   <h5>$999.99</h5>
-                  <button>Add to Cart</button>
+                  <button id="cartButton" >Add to Cart</button>
                 </div>
                 <div class="viewItemS">
                   <img
@@ -350,7 +169,7 @@
                   />
                   <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
                   <h5>$999.99</h5>
-                  <button>Add to Cart</button>
+                  <button id="cartButton" >Add to Cart</button>
                 </div>
               </div>
             </div>
@@ -364,100 +183,315 @@
         <details class="someMoreInfo">
           <summary>Overview</summary>
           <div class="info">
-            <p>Description</p>
-            <p>
-              The new MacBook Pro delivers game-changing performance for pro
-              users. With the powerful M1 Pro to supercharge pro-level workflows
-              while getting amazing battery life.¹ And with an immersive 14-inch
-              Liquid Retina XDR display and an array of pro ports, you can do
-              more than ever with MacBook Pro.
-            </p>
+            <div>
+              <p>Description</p>
+            </div>
+            <div>
+              <p>
+                The new MacBook Pro delivers game-changing performance for pro
+                users. With the powerful M1 Pro to supercharge pro-level
+                workflows while getting amazing battery life.¹ And with an
+                immersive 14-inch Liquid Retina XDR display and an array of pro
+                ports, you can do more than ever with MacBook Pro.
+              </p>
+            </div>
           </div>
           <div class="info">
-            <p>Features</p>
-            <p>
-              Apple M1 Pro or M1 Max chip for a massive leap in CPU, GPU, and
-              machine learning performance Up to 10-core CPU delivers up to 3.7x
-              faster performance to fly through pro workflows quicker than ever³
-              Up to 32-core GPU with up to 13x faster performance for
-              graphics-intensive apps and games³ 16-core Neural Engine for up to
-              11x faster machine learning performance³ Longer battery life, up
-              to 17 hours¹ Up to 64GB of unified memory so everything you do is
-              fast and fluid Up to 8TB of superfast SSD storage launches apps
-              and opens files in an instant Stunning 14-inch Liquid Retina XDR
-              display with extreme dynamic range and contrast ratio² 1080p
-              FaceTime HD camera with advanced image signal processor for
-              sharper video calls Six-speaker sound system with force-cancelling
-              woofers Studio-quality three-microphone array captures your voice
-              more clearly Three Thunderbolt 4 ports, HDMI port, SDXC card slot,
-              headphone jack, MagSafe 3 port Next-generation Wi-Fi 6 for faster
-              connectivity Backlit Magic Keyboard with Touch ID for secure
-              unlock and payments macOS Monterey lets you connect, share, and
-              create like never before, with exciting new FaceTime updates and a
-              redesigned Safari Available in space gray and silver Configurable
-              options are available. ¹Battery life varies by use and
-              configuration. See apple.com/batteries for more information. ²The
-              display on the 14-inch MacBook Pro has rounded corners at the top.
-              When measured as a standard rectangular shape, the screen is 14.2
-              inches diagonally (actual viewable area is less). ³Compared with
-              previous generation.
-            </p>
+            <div>
+              <p>Features</p>
+            </div>
+            <div>
+              <p>
+                Apple M1 Pro or M1 Max chip for a massive leap in CPU, GPU, and
+                machine learning performance Up to 10-core CPU delivers up to
+                3.7x faster performance to fly through pro workflows quicker
+                than ever³ Up to 32-core GPU with up to 13x faster performance
+                for graphics-intensive apps and games³ 16-core Neural Engine for
+                up to 11x faster machine learning performance³ Longer battery
+                life, up to 17 hours¹ Up to 64GB of unified memory so everything
+                you do is fast and fluid Up to 8TB of superfast SSD storage
+                launches apps and opens files in an instant Stunning 14-inch
+                Liquid Retina XDR display with extreme dynamic range and
+                contrast ratio² 1080p FaceTime HD camera with advanced image
+                signal processor for sharper video calls Six-speaker sound
+                system with force-cancelling woofers Studio-quality
+                three-microphone array captures your voice more clearly Three
+                Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack,
+                MagSafe 3 port Next-generation Wi-Fi 6 for faster connectivity
+                Backlit Magic Keyboard with Touch ID for secure unlock and
+                payments macOS Monterey lets you connect, share, and create like
+                never before, with exciting new FaceTime updates and a
+                redesigned Safari Available in space gray and silver
+                Configurable options are available. ¹Battery life varies by use
+                and configuration. See apple.com/batteries for more information.
+                ²The display on the 14-inch MacBook Pro has rounded corners at
+                the top. When measured as a standard rectangular shape, the
+                screen is 14.2 inches diagonally (actual viewable area is less).
+                ³Compared with previous generation.
+              </p>
+            </div>
           </div>
         </details>
         <hr />
         <details class="someMoreInfo">
           <summary>Specifications</summary>
-          <div class="info">
-            <p></p>
-            <p></p>
-          </div>
-        </details>
-        <hr />
-        <details class="someMoreInfo">
-          <summary>Compare Similar Items</summary>
-          <div class="info">
-            <p></p>
-            <p></p>
-          </div>
-        </details>
-        <hr />
-        <details class="someMoreInfo">
-          <summary>Reviews</summary>
-          <div class="info">
-            <p></p>
-            <p></p>
-          </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>Display Type</b></div>
+              </div>
+              <div>
+
+                <div>LED</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>Resolution</b></div>
+              </div>
+              <div>
+
+                <div>4K (2160p)</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>Screen Size Class</b></div>
+              </div>
+              <div>
+
+                <div>70 inches</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>High Dynamic Range (HDR)</b></div>
+              </div>
+              <div>
+
+                <div>Yes</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>High Dynamic Range Format</b></div>
+              </div>
+              <div>
+
+                <div>HDR 10, Hybrid Log-Gamma (HLG)</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>LED Panel Type</b></div>
+              </div>
+              <div>
+
+                <div>Standard LED</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>Backlight Type</b></div>
+              </div>
+              <div>
+
+                <div>Direct Lit</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>Refresh Rate</b></div>
+              </div>
+              <div>
+
+                <div>60Hz</div>
+              </div>
+             </div>
+             
+             <div class="info">
+              <div>
+
+                <div> <b>Smart Platform</b></div>
+              </div>
+              <div>
+
+                <div>webOS</div>
+              </div>
+             </div>
+             
+             <div class="info">
+              <div>
+
+                <div> <b>Featured Streaming Services</b></div>
+              </div>
+              <div>
+
+                <div>HBO Max, Netflix, Prime Video, Disney+, Apple TV+, Hulu, Paramount+, Peacock, YouTube TV, Spotify, iHeartRadio</div>
+              </div>
+             </div>
+             
+             <div class="info">
+              <div>
+
+                <div> <b>Number of HDMI Inputs (Total)</b></div>
+              </div>
+              <div>
+
+                <div>3</div>
+              </div>
+             </div>
+             
+             <div class="info">
+              <div>
+
+                <div> <b>Works With</b></div>
+              </div>
+              <div>
+
+                <div>Google Assistant, Amazon Alexa, Apple HomeKit</div>
+              </div>
+             </div>
+             
+             <div class="info">
+              <div>
+
+                <div> <b>Voice Assistant Built-in</b></div>
+              </div>
+              <div>
+
+                <div>Google Assistant, Amazon Alexa</div>
+              </div>
+             </div>
         </details>
         <hr />
         <details class="someMoreInfo">
           <summary>Question & Ans</summary>
           <div class="info">
-            <p></p>
-            <p></p>
+            <div>
+              <p>Q1.</p>
+            </div>
+            <div>
+              <p>: QuestionIs the delivery time/store pick up date accurate? Or are they delaying orders?</p>
+            </div>
           </div>
-        </details>
+          <div class="info">
+            <div>
+              <p>Ans.</p>
+            </div>
+            <div>
+              <p>: Delivery times are never accurate. Bestbuy has changed my delivery date 5 times already. Honestly will never order from bestbuy again.</p>
+            </div>
+          </div>
+          <div class="info">
+            <div>
+              <p>Q2.</p>
+            </div>
+            <div>
+              <p>: QuestionWhat change in these model from the previous model</p>
+            </div>
+          </div>
+            <div class="info">
+              <div>
+                <p>Ans.</p>
+              </div>
+              <div>
+                <p>: Answer It has a new processor designed by Apple called the M1. It is stated to be faster and more efficient than the Intel's they sell. There are a few little changes, this is just the largest change.</p>
+              </div>
+            </div>
+          <div class="info">
+            <div>
+              <p>Q3.</p>
+            </div>
+            <div>
+            </div>
+            <p>: QuestionWill this go on sale for Black Friday?</p>
+          </div>
+          <div class="info">
+            <div>
+              <p>Ans.</p>
+            </div>
+            <div>
+              <p>: Answer Most likely not. Given this has just now released and how new it is, it will most likely not go on a black Friday sale this year.</p>
+            </div>
+          </div>
+            </details>
         <hr />
         <details class="someMoreInfo">
           <summary>Reviews</summary>
           <div class="info">
-            <p></p>
-            <p></p>
+            <div>
+              <p style="color: #0457c8">Melody</p>
+            </div>
+            <div>
+              <p>
+                I purchased this for myself for my birthday after months of
+                research. This beautiful rose gold powerhouse is a sexy
+                streamlined piece of art! I was a window user all my
+                life...until now. Smooth...long battery life..quite...no fan!!!
+              </p>
+            </div>
           </div>
         </details>
         <hr />
         <details class="someMoreInfo">
           <summary>Buying Options</summary>
           <div class="info">
-            <p></p>
-            <p></p>
+            <div>
+              <p>Options</p>
+            </div>
+            <div>
+              <p>
+                <ul>
+                  <li style="font-weight: bolder;">Open-Box Excellent - Certified</li>
+                  <li>Minor to moderate cosmetic signs of use possible</li>
+                  <li>Any signs of use will not impact performance</li>
+                  <li>Nonessential parts or accessories may be missing</li>
+                  <li style="font-weight: bolder;">Open-Box Satisfactory</li>
+                  <li>Looks brand new</li>
+                  <li>Includes all original parts/accessories</li>
+                  <li>Typically contains packaging</li>
+                  <li>Verified to work properly</li>
+                </ul>
+              </p>
+            </div>
           </div>
         </details>
         <hr />
         <details class="someMoreInfo">
           <summary>From the Manufacturer</summary>
           <div class="info">
-            <p></p>
-            <p></p>
+            <img style="padding: 10px;" src="https://lh3.googleusercontent.com/pbluDEXVYmvtXDHCEmot-OAXTM8HLUNmmJw_o2eRUE56DYRhKqIXc-hUL8_oLAyXzGOHTX2dLy-WxEceH-ZWXV6gueQhAGR7h_0Q8u3asX1LMRRkEjFNa6m34klRtDrKgKvDDQdApCfycexetrxTKvsFVn-RFGc4tVaa2OekAglJGjhmDu7zmpxhyJ7vEDtVFf9ufieUk7gOWmmRxAfU24WhvunH93Ftr-VsZEtff4VuG1Vpoo-04Rgg_EuvIjbWxLkxssPLO3l3Ys5nZ1OvoDyxB8xDR7wsJQcZxUfPN2zz6RdF8obH5DIKRffrIPOFHyJ0tQWcMa7f8VQWkiLjh5feJM2TKFRNfv_jD24URDatz9JcXne5rul0PkbvYvJqIjhIIeXbqy5DJ-WBNGnMw8GkVniCFcjlsI5QMXHrifQYH-pRyAspZ68s5Hvu2OJ-gigpe6W1RdVGUF27WwwYZ5-gKHaeVDtFZ_uHD-pzqnk966wS9WY58JeIDHicOWxjNdBt_HDRF-90RalNX32rN4UFFpg7e4oa9HaX8F9nqqKmxGLnSi54648r9zYcmTb5pmCoCrjMimghkNjM0BQ5f97ZbGR3l9vGllcmH6TeuIfP4asXajDi0GiXLdnRhzZ36R8__i5rdLSpUiaat1v0DWnZ4baAGw5GcZSSPgZnWDpdGTiSDztJO5nsbk-3KPKSvj1RGuBFllzYUO1mC7bKBkvO0wiLjd7OgKxAccXo8XuLE2sad8b3ohZZBvYobubocVLGwWhBvscc2SAzzO7d2jZ8acJsbmKUAqw9grtyXAUiUpqlE_u5fNzs6fbwPkBuuFmxZQG-oAhLek6q9rIlBDmci-sK0uG4kYfgVt_xIQSAgqkUca-QY2op59zPFPzZ6LOIRnm7wJZlHa2C1ovL20roBBnQISANG4CrHqJ7HrITX6SFEsOuinMa_BPpuYDpIBQoql_xrp4=w724-h392-no?authuser=0" alt="Manufacturer1">
+            <div>
+              <p></p>
+            </div>
+            <div>
+              <p></p>
+            </div>
+          </div>
+          <div class="info">
+            <img style="padding: 10px;" src="https://lh3.googleusercontent.com/sZB4sem0fl6gQbu23n-kwhfyrYccdP3Q3uDzTEJC3eB0YIFFKnf_q0RFKpCriSWahKXE3HhIyyvpD7KOamUrKc4vxQ2viAkPPrft1D0JMjsCewX12QqMDeM6od_7LfbPRm1AggGQAdcwPI2Vh08aoMa560jCFuJQZNmfSkLyGf0j5hIUaO1O4n39N5Ittiy10aNRxkh2fWE2Z5Vqvv-wQN1enfIYGWNlE_wmcx8snO_-Y-OvuNHUbcchUrcHXMQhfcY4H1PCxI1XaEjHWaj3igHCjW6B8xigfUTCA76d-Vq2VRlsJWh6irhWnxEWbSlbYnnWdB6CEFklLGWqkholwguT2R-urs8m2g-pdXYWaZ38nhvZTOkJW_PqOdI7U7wZyvF0g5DQ8J-mRhbRbFFyN-nS1dbaSsKPeNbcbM4hkiBi-hDIRGNcqfOi0ub9ADHUloC9Sa9w2T6vviFk6VscXpJXzlbZ_od1oKQELSlCRw3naSkK8IcP4qOUEfVPK3nEF9-AZ8JR3DwjVI5vF9m7RQlXDbuci67-idiPCoHVnF8yyr1nH4N_JlMmLdjy38IjaG9ll-F6udAxl0tvFgS1NID9fQAS08keTw3kd3sA6vDlovlWRHn8e3wGq3-8gzi5pJWFRyHTLOXvvBhRyyKCvNtY0Gcyr6bM-wSbAIti3tqecPixbUfzwWzCNylQcFO2nnqqes9cGpwhu6k0hRDiw3DQoev5QDnsxX6pvD3upWI1CXMeGy-BWfBUZVlF_9wFaHo-SKGuZ7JZ17frwdwiW57EXJxNn-8HHom1gIfQs1I9OkT8qkBgxQsuCJkmj3CLgMJtaCivttKnXdV2QEL_Scglbt28G2_rPzsTqOAKGITOB-yg5-5-ITEUZ5SwJKn4PZFlYXnMTXKx5asmsEKAbex6qLORZhSieuYc_nfb9-nuIk0Tkd7VUg7jvtMmDHUbaADax93yNd4=w842-h463-no?authuser=0" alt="Manufacturer">
+            <div>
+              <p></p>
+            </div>
+            <div>
+              <p></p>
+            </div>
           </div>
         </details>
       </div>
@@ -474,14 +508,14 @@
         <div id="viewedProducts">
           <button id="left-button"><</button>
           <div class="viewproducts" id="content">
-            <div class="viewItem">
+            <!-- <div class="viewItem">
               <img
                 src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
                 alt="logo"
               />
               <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
               <h5>$999.99</h5>
-              <button>Add to Cart</button>
+              <button id="cartButton" >Add to Cart</button>
             </div>
             <div class="viewItem">
               <img
@@ -490,7 +524,7 @@
               />
               <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
               <h5>$999.99</h5>
-              <button>Add to Cart</button>
+              <button id="cartButton" >Add to Cart</button>
             </div>
             <div class="viewItem">
               <img
@@ -499,7 +533,7 @@
               />
               <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
               <h5>$999.99</h5>
-              <button>Add to Cart</button>
+              <button id="cartButton" >Add to Cart</button>
             </div>
             <div class="viewItem">
               <img
@@ -508,7 +542,7 @@
               />
               <p>4Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
               <h5>$999.99</h5>
-              <button>Add to Cart</button>
+              <button id="cartButton" >Add to Cart</button>
             </div>
             <div class="viewItem">
               <img
@@ -517,7 +551,7 @@
               />
               <p>5Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
               <h5>$999.99</h5>
-              <button>Add to Cart</button>
+              <button id="cartButton" >Add to Cart</button>
             </div>
             <div class="viewItem">
               <img
@@ -526,7 +560,7 @@
               />
               <p>6Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
               <h5>$999.99</h5>
-              <button>Add to Cart</button>
+              <button id="cartButton" >Add to Cart</button>
             </div>
             <div class="viewItem">
               <img
@@ -535,7 +569,7 @@
               />
               <p>7Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
               <h5>$999.99</h5>
-              <button>Add to Cart</button>
+              <button id="cartButton" >Add to Cart</button>
             </div>
             <div class="viewItem">
               <img
@@ -544,9 +578,9 @@
               />
               <p>8Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
               <h5>$999.99</h5>
-              <button>Add to Cart</button>
-            </div>
-          </div>
+              <button id="cartButton" >Add to Cart</button>
+            </div> -->
+          </div> 
           <!-- <div class="right"> -->
           <button id="right-button">></button>
           <!-- right div -->
@@ -560,14 +594,14 @@
       <div id="viewedProducts">
         <button id="left-button1"><</button>
         <div class="viewproducts" id="content1">
-          <div class="viewItem">
+          <!-- <div class="viewItem">
             <img
               src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
               alt="logo"
             />
             <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
             <h5>$999.99</h5>
-            <button>Add to Cart</button>
+            <button id="cartButton" >Add to Cart</button>
           </div>
           <div class="viewItem">
             <img
@@ -576,7 +610,7 @@
             />
             <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
             <h5>$999.99</h5>
-            <button>Add to Cart</button>
+            <button id="cartButton" >Add to Cart</button>
           </div>
           <div class="viewItem">
             <img
@@ -585,7 +619,7 @@
             />
             <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
             <h5>$999.99</h5>
-            <button>Add to Cart</button>
+            <button id="cartButton" >Add to Cart</button>
           </div>
           <div class="viewItem">
             <img
@@ -594,7 +628,7 @@
             />
             <p>4Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
             <h5>$999.99</h5>
-            <button>Add to Cart</button>
+            <button id="cartButton" >Add to Cart</button>
           </div>
           <div class="viewItem">
             <img
@@ -603,7 +637,7 @@
             />
             <p>5Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
             <h5>$999.99</h5>
-            <button>Add to Cart</button>
+            <button id="cartButton" >Add to Cart</button>
           </div>
           <div class="viewItem">
             <img
@@ -612,7 +646,7 @@
             />
             <p>6Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
             <h5>$999.99</h5>
-            <button>Add to Cart</button>
+            <button id="cartButton" >Add to Cart</button>
           </div>
           <div class="viewItem">
             <img
@@ -621,7 +655,7 @@
             />
             <p>7Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
             <h5>$999.99</h5>
-            <button>Add to Cart</button>
+            <button id="cartButton" >Add to Cart</button>
           </div>
           <div class="viewItem">
             <img
@@ -630,8 +664,8 @@
             />
             <p>8Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
             <h5>$999.99</h5>
-            <button>Add to Cart</button>
-          </div>
+            <button id="cartButton" >Add to Cart</button>
+          </div> -->
         </div>
         <button id="right-button1">></button>
       </div>
@@ -639,7 +673,7 @@
     <div id="similarProducts">
       <h2>Similar products from outside of Best Buy</h2>
       <div id="similarProduct">
-        <a href="">
+        <!-- <a href="">
           <div>
             <img
               src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
@@ -715,10 +749,12 @@
             <p>₹1,41,990.00</p>
             <p>Lenovo India</p>
           </div>
-        </a>
+        </a> -->
       </div>
     </div>
     <hr style="visibility: hidden" />
+    <br>
+  </div>
     <div id="bottomContainer"></div>
   </body>
 </html>
@@ -729,6 +765,12 @@
 </script>
 
 <script>
+  document.querySelector("#cartButton").addEventListener("click", addToCart);
+
+  function addToCart() {
+    console.log("I am cartBtn");
+  }
+  console.log('I am in productPage.html page script');
   const rightBtn = document.querySelector("#right-button");
   const rightBtn1 = document.querySelector("#right-button1");
   const leftBtn = document.querySelector("#left-button");
@@ -756,3 +798,4 @@
     event.preventDefault();
   });
 </script>
+<script src="./script files/productPage.js"></script>

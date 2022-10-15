@@ -1,34 +1,75 @@
+      #container{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 50px;
+      }
+      button{
+        background-color: #c5cbd5;
+        border-radius: 5px;
+        height: 30px;
+        color: #0457c8;
+        font-size: 20px;
+        width: min-content;
+      }
       hr:first-child {
         margin-top: 50px;
         margin-bottom: 60px;
       }
       #productDetail {
         display: flex;
-      }
-      #productDetail {
-        border: 6px solid crimson;
-        /* height: min-content;
-        overflow: scroll; */
+        position: sticky;
+        height: min-content;
+        /* border: 10px dashed black; */
       }
       #productDetail > div {
-        border: 10px dashed yellow;
+        /* border: 10px dashed yellow; */
         height: fit-content;
+        width: 70%;
+        position: static;
+      }
+      #productDetail > div:first-child{
+        border-radius: 10px;
+        /* border: 2px solid black; */
+        position: sticky;
+        /* background-color: red; */
+        top: 0;
+      }
+      #productDetail > div img{
+        width: 65%;
+        margin: auto;
+        padding: 25px;
+        /* position: sticky; */
+
       }
       #productDetail > div:last-child {
         display: flex;
-        border: 3px solid red;
+        /* border: 3px solid red; */
+        /* position: sticky; */
+        /* background-color: red; */
+        position: sticky;
       }
-      #productDetail > div:last-child > div:nth-child(3) {
-        height: max-content;
+      #productDetail > div:last-child > div:nth-child(3){
+        height: min-content;
+        position: static;
+        top: 0;
+        /* background-color: rebeccapurple; */
+        text-align: justify;
+        width: 380px;
         border-left: 3px solid #c5cbd5;
+      }
+      #productDetail > div:last-child > div:nth-child(1) {
+        height: max-content;
+        /* background-color: aqua; */
+        position: sticky;
+        top: 0;
       }
       #productDetail > div > div:first-child {
         display: flex;
         gap: 20px;
-        border: 2px solid salmon;
+        /* border: 2px solid salmon; */
       }
       #productDetail > div > div:nth-child(2) > div {
-        border: 2px solid teal;
+        /* border: 2px solid teal; */
         display: flex;
         gap: 20px;
       }
@@ -39,16 +80,63 @@
       }
       #productDetail > div:nth-child(2) > div {
         display: grid;
-        border: 3px solid blue;
+        /* border: 3px solid blue; */
       }
       #productDetail > div:nth-child(2) > div:first-child {
-        border: 5px dashed green;
+        /* border: 5px dashed green; */
         height: fit-content;
+        width: 70%;
+        padding: 8px;
+      }
+      #productDetail > div:nth-child(2) > div:first-child h1+div > div:first-child{
+        margin: -25px 2px 0px 0px;
+        text-align: center;
+      }
+      #productDetail > div:nth-child(2) > div:first-child h1+div{
+        /* display: flex; */
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #productDetail > div:nth-child(2) > div:first-child button, 
+      #productDetail > div:nth-child(2) > div:first-child select {
+        height: 40px;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 18px;
+        padding: 2px;
+        font-weight: bold;
+      }
+      /* #productDetail > div:nth-child(2) > div:first-child button{
+        background-color: yellow;
+      } */
+      #productDetail > div:nth-child(2) > div:first-child select+div {
+        /* border: 5px solid darkcyan; */
+        text-align: end;
+        font-size: medium;
+        margin-bottom: 10px;
+      }
+      #productDetail > div:nth-child(2) > div:first-child button+div{
+        display: flex;
+        justify-content: space-around;
+      }
+      #productDetail > div:nth-child(2) > div summary{
+        font-size: 25px;
+      }
+      #productDetail > div:nth-child(2) > div p{
+        margin-top: -25px;
+        margin-bottom: -15px;
       }
       .info {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        gap: 50px;
+        text-align: justify;
         font-size: 20px;
+        /* border: 2px solid teal; */
+        border-bottom: 1px solid#c5cbd5;
+      }
+      .info > div:first-child > p{
+        /* height: 200px; */
+        width: 200px;
       }
       details > #viewedProducts {
         border: 5px dashed black;
@@ -87,6 +175,10 @@
       a:hover {
         text-decoration: underline;
       }
+      /* also bought products */
+      #alsoBought{
+        margin-top: 50px;
+      }
       /* Most Viewed Products */
       #viewedProducts {
         display: flex;
@@ -94,13 +186,16 @@
         justify-items: center;
         align-items: center;
         width: 70%;
+        margin: 20px 0px;
       }
 
       .viewproducts {
-        border-left: 1px solid black;
-        border-right: 1px solid black;
+        /* border-left: 1px solid black; */
+        border-right: 3px solid #e0e6ef;
+        border-left: 3px solid #e0e6ef;
+        /* border-right: 1px solid black; */
         width: 100%;
-        margin: 1px;
+        margin: 50px 0px;
         overflow: hidden;
         white-space: nowrap;
         padding: 2px;
@@ -150,40 +245,50 @@
 
       /* Similar Products */
       #similarProducts {
-        float: left;
+        margin-top: 50px;
         margin-bottom: 50px;
-        border: 4px solid teal;
+        width: 100%;
+        /* border: 4px solid teal; */
       }
       #similarProduct {
         gap: 20px;
         display: flex;
-        width: 70%;
+        /* width: 70%; */
+        height: 350px;
+        overflow-y: scroll;
         justify-content: space-around;
         overflow-x: auto;
         text-align: center;
       }
-      /* #similarProduct a {
-      } */
+      #similarProduct a {
+        height: max-content;
+        /* float: left; */
+      }
       #similarProduct img + p {
         font-weight: bold;
+        height: 50px;
       }
       #similarProduct img {
-        width: 250px;
+        /* width: 250px; */
+        height: 230px;
       }
-      #similarProduct p:nth-child(even) {
+      #similarProduct p:nth-child(1) {
         font-size: 20px;
         color: #0457c8;
+        height: 200px;
       }
-      #similarProduct p:nth-child(odd) {
-        font-size: 20px;
-        color: black;
-        font-weight: bold;
+      #similarProduct p:last-child {
+        margin-top: 20px;
+        bottom: 0;
       }
 
       /* Bottom */
       #bottomContainer {
         margin-top: 70px;
         height: fit-content;
-        border: 5px dashed crimson;
+        /* border: 5px dashed crimson; */
         padding-top: 50px;
+      }
+      @media screen {
+        
       }
