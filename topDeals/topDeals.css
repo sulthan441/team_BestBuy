@@ -1109,3 +1109,19 @@ border: 1px solid red;
     font-size: 11px;
     margin-top: 1px;
 }
+
+#bottomItemSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#slideImg {
+    width: 80%;
+}
+
+#btn {
+    background-color: yellow;
+    text-align: center;
+    width: 50%;
+}
