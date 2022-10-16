@@ -14,9 +14,13 @@ body{
     display: flex;
     height: 73px;
     justify-content: space-between;
-    position:fixed;
+    /* position:fixed; */
+    /* width: 100%; */
+    /* top: 0%; */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
     width: 100%;
-    top: 0%;
 }
 
 #navLeft {
@@ -124,7 +128,7 @@ a {
 }
 
 #mininav{
-    position:fixed;
+    /* position:fixed; */
     margin-top: 73px;
     /* top: 75px; */
     /* display: none; */
