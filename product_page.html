@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="./styles/product.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/3b8ef09fa9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="filter_session">
+            <div id="category">
+                <h3>Category</h3>
+                <p>All Laptops</p>
+                <p>PC Laptops</p>
+                <p>Chromebooks</p>
+                <p>Gaming Laptops</p>
+            </div>
+            <div id="customer_rating">
+                <h3>Rating</h3>
+                <input value="customer rating" type="checkbox"  id="topRating" name="sameRating" for="rating" onclick="rating_sort()">
+                <label >Top-Rated(21) </label><br>
+                <input  type="checkbox">
+                <label for="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i></label><br>
+                <input type="checkbox">
+                <label for="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-regular fa-star"></i></label><br>
+                <input type="checkbox">
+                <label for="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i></label><br>
+                <input type="checkbox">
+                <label for="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i></label><br>
+                <input type="checkbox" id="lowRating" onclick="rating_lowsort()" name="sameRating">
+                <label for="rating"><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                        class="fa-regular fa-star"></i></label><br>
+
+
+            </div>
+            <div id="price">
+                <h3>Price</h3>
+                <input type="checkbox" name="" id="">
+                <label for="price">$75 - $99.99(3)</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="price">$100 - $149.99(3)</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="price"> $150 - $199.99(3)</label><br>
+                <input type="checkbox" name="" id="">
+                <label for="price">$200 - $249.99(5) </label><br>
+                <input type="checkbox" name="" id="">
+                <label for="price">$250 - $499.99(30) </label><br>
+                <input type="checkbox" name="" id="">
+                <label for="price">$500 - $749.99(24) </label><br>
+                <input type="checkbox" name="" id="">
+                <label for="price">$750 - $999.99(34) </label><br>
+                <input type="checkbox" name="" id="">
+                <label for="price">$1000 - $1249.99(14) </label><br>
+                <input type="checkbox" name="" id="">
+                <label for="price">$1250 - $1499.99(17) </label><br>
+                <input type="checkbox" name="" id="">
+                <label for="price">$1500 - $1999.99(35) </label><br>
+            </div>
+            <div id="codition">
+                <h3>Condition</h3>
+                <input type="checkbox">
+                <label for="">New(148)</label><br>
+                <input type="checkbox">
+                <label for="">Pre-Owned(6)</label><br>
+                <input type="checkbox">
+                <label for="">Refurbished(27)</label><br>
+                <input type="checkbox">
+                <label for="">Open-Box(49)</label><br>
+
+            </div>
+            <div id="discount">
+                <h3>Discount</h3>
+                <input type="checkbox">
+                <label for="">All Discounted Items(37)</label><br>
+                <input type="checkbox">
+                <label for="">20% Off or More(22)</label><br>
+                <input type="checkbox">
+                <label for="">30% Off or More(8)</label><br>
+                <input type="checkbox">
+                <label for="">40% Off or More(5)</label><br>
+                <input type="checkbox">
+                <label for="">50% Off or More(2)</label><br>
+
+            </div>
+            <div id="color">
+                <h3>Color</h3>
+                <input type="checkbox">
+                <label for="">Black</label><br>
+                <input type="checkbox">
+                <label for="">Grey</label><br>
+                <input type="checkbox">
+                <label for="">Green</label><br>
+                <input type="checkbox">
+                <label for="">Tan</label><br>
+                <input type="checkbox">
+                <label for="">Gold</label><br>
+                <input type="checkbox">
+                <label for="">Brown</label><br>
+                <input type="checkbox">
+                <label for="">Blue</label><br>
+                <input type="checkbox">
+                <label for="">Silver</label><br>
+            </div>
+            <div id="video_capacity">
+                <h3>Screen Resolution</h3>
+                <input type="checkbox">
+                <label for="">3840 x 2400(2)</label><br>
+                <input type="checkbox">
+                <label for="">3840 x 2160 (4K)(3)</label><br>
+                <input type="checkbox">
+                <label for="">3240 x 2160(1)</label><br>
+                <input type="checkbox">
+                <label for="">3072 x 1920 (Retina)(1)</label><br>
+                <input type="checkbox">
+                <label for="">2880 x 1800(1)</label><br>
+                <input type="checkbox">
+                <label for="">2560 x 1600(15)</label><br>
+                <input type="checkbox">
+                <label for="">2256 x 1504(2)</label><br>
+                <input type="checkbox">
+                <label for="">2240 x 1400(4)</label><br>
+            </div>
+        </div>
+        <div id="product">
+            <div id="sort_session">
+                <div id="sorting_left">
+                    <label id="sort_By" for="">Sort By:-</label>
+                    <select name="sort" id="sorting" onchange="handlePriceSort()">
+                        <option value="Sort By">Sort By</option>
+                        <option value="Price Low to High">Price Low to High</option>
+                        <option value="Price High to Low">Price High tO Low</option>
+                        <option value="customer rating">customer rating</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div id="products_space">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script src="./script/product_page.js"></script>

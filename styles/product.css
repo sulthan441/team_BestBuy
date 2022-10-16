@@ -1,0 +1,143 @@
+#main {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin: auto;
+
+
+}
+
+#filter_session>div{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    margin-bottom: 20px;
+    padding: 15px;
+    /* overflow-y: scroll; */
+    /* overflow-y: auto; */
+
+
+}
+
+#filter_session{
+    /* position: fixed; */
+    width: 29%;
+    overflow-y: scroll;
+    /* position: fixed; */
+
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+
+    /* height: 900px; */
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: visible; */
+
+
+}
+
+#products_space>div {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+#DescriptionDiv{
+    /* margin-top: 40px; */
+width: 40%;
+}
+
+#sort_session{
+    /* float: left; */
+    /* margin-bottom: 50px; */
+    height: 50px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset; */
+    /* width: 100%; */
+    /* display: flex; */
+
+}
+#sorting_left{
+    float: right;
+    font-weight: bold;
+}
+#sorting{
+   border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 2px 3px;
+}
+#sort_session>label{
+    /* margin-left: 80%; */
+    /* left: 10%; */
+    
+    /* float: left; */
+    font-size: smaller;
+    font-weight: 550;
+}
+
+#product{
+    width: 100%;
+}
+
+#productImg{
+    /* margin-top: 45px; */
+    padding: 10px;
+    /* padding-left: 20px; */
+    width: 255px;
+    height: 180px;
+    /* margin-left: 15px; */
+}
+#cartDiv{
+    width: 25%;
+    /* margin-top: 40px; */
+}
+#button{
+    width: 100%;
+    padding: 6px;
+    background-color: #ffe000;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#openBox{
+    font-size: smaller;
+    font-weight: bold;
+}
+#title{
+    font-size: smaller;
+    color: #0046be;
+    cursor: pointer;
+}
+#title:hover{
+    text-decoration: underline;
+}
+#model{
+    font-size: small;
+    font-weight: bold;
+}
+#get{
+    color: #318000;
+    font-size: 12px;
+}
+#pickup,#delivery{
+font-size: 12px;
+font-weight: bold;
+}
+
+
+
+#category p{
+    color: #0046be;
+    line-height: 10px;
+
+}
+#category p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#filter_session h3{
+    font-size: 15px;
+}
+#price label,#customer_rating label,#codition label,#discount label,#color label,#video_capacity label{
+    line-height: 30px;
+}
