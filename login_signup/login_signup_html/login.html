@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In to Best Buy</title>
+    <link rel="icon"
+        href="https://www.freepnglogos.com/uploads/best-buy-png-logo/logos-quiz-answers-level-png-logo-30.png"
+        type="image/icon type">
+    <link rel="stylesheet" href="../style/login.css">
+    <script src="https://kit.fontawesome.com/390f330b7c.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    #eye{
+        margin-bottom: 25px;
+    }
+    .account-recovery {
+        margin-top: 0px;
+        text-align: start;
+    }
+    
+
+    
+</style>
+<body>
+    <nav id="login-signup-navbar">
+        <!-- navbar content -->
+    </nav>
+    <div id="form-main-contaner">
+        <div class="setting-container">
+            <div>
+                <h1 class="heading">Sign In to Best Buy</h1>
+                <div>
+                    <div class="form-data">
+                        
+                        <form action="">
+                            <div class="form-input">
+
+                                <p class="input-field">
+                                    <input class="tb-input email" type="email" autocomplete="off"
+                                        name="firstName" placeholder=" " value="">
+                                    <label class="label">Email Address</label>
+                                </p>
+
+                                <p class="input-field">
+                                    <input class="tb-input password" type="password" placeholder=" ">
+                                    <label class="label">Password</label>
+                                </p>
+                                <p class="password-show">
+                                    <button style="border: none;" id="eye" onclick="togglePassword"><i class="fa fa-eye"
+                                            aria-hidden="true"></i> show passwords</button>
+
+                                    <span class="slider"></span>
+                                </p>
+                                <p class="input-field account-recovery">
+                                    <a href="#"style="font-size:15px;">Forget your Password?</i></a> 
+                                </p>
+
+                                <div>
+                                    <button class="submit-btn login-btn" type="submit">Create an
+                                        Account</button>
+                                </div>
+                                <div>
+                                    <h3><span>or</span></h3>
+                                </div>
+                                <div>
+                                    <button type="button" class="login-with-google-btn"><i
+                                            class="fa-brands fa-google fa-2x"></i>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign In with Google
+                                    </button>
+                                </div>
+                                <div>
+                                    <p class="termsNcond">
+                                        By continuing you agree to our <a href="#">Terms and Conditions</a>, our <a
+                                            href="#">Privacy Policy</a>, and the <a href="#">My Best Buy® Program
+                                            Terms</a> .
+                                    </p>
+                                </div>
+
+                                <div id="hr-tag">
+                                    <hr>
+                                </div>
+
+                                <div>
+                                    <p id="existing-user">
+                                        <strong>Don't have an account?&nbsp;</strong> <a href="./signup.html">Create an Account</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer id="login-footer">
+        <!-- footer content -->
+    </footer>
+</body>
+</html>
+<script>
+    document.querySelector("#eye").addEventListener('click', togglePassword)
+    function togglePassword() {
+        event.preventDefault();
+        var type = document.querySelector(".password").type;
+        if (type == 'password') {
+            document.querySelector(".password").type = "text";
+        } else {
+            document.querySelector(".password").type = "password";
+        }
+    }
+</script>
+<script src="../script/login.js" type="module"></script>
