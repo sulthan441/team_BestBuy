@@ -224,13 +224,14 @@ label {
   /* width: 450px; */
   font-family: sans-serif;
   width: 400px;
-  height: 500px;
+  /* height: 500px; */
   margin-top: 10.5%;
 }
 
 .flexDiv {
   padding: 2px;
   display: flex;
+  /* display: block; */
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 5px;
@@ -298,6 +299,5 @@ hr {
 }
 #grid-div {
   border: 1px solid green;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-columns: repeat(1, 1fr); */
 }
