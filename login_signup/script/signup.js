@@ -47,6 +47,7 @@ document.querySelector(".signup-btn").addEventListener('click',()=>{
         localStorage.setItem('user',JSON.stringify(user));
         alert("Account Created Succesfully")
         console.log(user)
-        window.location.href="../login.html"
+        window.location.href="../login_signup_html/login.html"
+        
     }
 })
