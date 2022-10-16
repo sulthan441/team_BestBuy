@@ -1,0 +1,303 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#mainDiv {
+  display: flex;
+  margin: auto;
+  width: 65%;
+  justify-content: space-around;
+}
+::placeholder {
+  letter-spacing: 2px;
+}
+label {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+/* LEFT DIV CSS STARTS */
+
+/* top div css start */
+#topDiv {
+  padding: 15px 0px;
+}
+.fontlogo {
+  margin-left: -7px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  padding: 0px 0px 15px 0px;
+}
+#topDiv > a {
+  text-decoration: none;
+  color: #0046be;
+}
+
+/* left div-1 css start */
+#left-div-1 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* width: 458px; */
+  /* width: 500px; */
+  padding: 20px 20px;
+}
+/* card details start */
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  height: 64px;
+  justify-content: space-around;
+}
+#cardNum {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  padding: 0px 10px;
+}
+/* card details end  */
+
+/* card image div css starts */
+#cardImg {
+  display: flex;
+  margin: 10px 0px;
+}
+.card {
+  margin: auto;
+  width: 50px;
+}
+.card img {
+  width: 50px;
+}
+/* card iamge css end */
+
+/* span tag div */
+#other {
+  padding: 8px 0px;
+  font-size: 12px;
+  color: #0046be;
+}
+/* span tag div css end */
+
+/* offer div css  */
+#offer {
+  padding-top: 12px;
+  font-size: 12px;
+}
+#offer {
+  color: #0046be;
+}
+#offer > div {
+  padding: 12px 0px;
+  font-size: 14px;
+  color: black;
+  letter-spacing: 1px;
+}
+/* offer div css end */
+
+/* full name div css starts */
+#flName {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* font-size: 13px; */
+}
+#flName > div > div input {
+  width: 210px;
+  box-sizing: border-box;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  padding: 0px 10px;
+}
+#flName > div div {
+  padding: 3px 0px;
+}
+/* full name div css end */
+
+/* address div css start */
+#address > div {
+  padding: 8px 0px;
+}
+#address > div > span {
+  font-size: 13px;
+  color: #0046be;
+}
+.international {
+  display: flex;
+  justify-content: space-between;
+}
+.international > label + label {
+  color: #0046be;
+}
+#address > input {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  padding: 0px 10px;
+}
+/* address div css end */
+
+/* city div start css */
+#city {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#city > div > div {
+  padding: 3px 0px;
+}
+#city input[type="text"] {
+  width: 160px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  padding: 0px 10px;
+}
+#city > div > div > select {
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  padding: 0px 10px;
+}
+/* city div css end */
+/* left div-1 css end */
+
+/* left div-2 css start */
+#left-div-2 {
+  padding: 22px 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+#left-div-2 > div {
+  padding: 6px 0px;
+  line-height: 1.5;
+}
+#left-div-2 > div > span {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+#left-div-1 > hr {
+  opacity: 0.2;
+}
+/* left div-2 css end */
+
+/* left div-3 css start */
+#left-div-3 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 22px 20px;
+  margin-bottom: 25px;
+}
+#left-div-3 > div {
+  padding: 10px 0px;
+}
+#left-div-3 > div input {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  color: #000;
+  font-weight: bold;
+  background-color: yellow;
+  border: none;
+}
+#left-div-3 > span {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+}
+#left-div-3 > span > a {
+  text-decoration: none;
+  color: #0046be;
+}
+/* left div-3 css end */
+/* LEFT DIV CSS END */
+
+/* RIGHT DIV CSS STARTS */
+#rightDiv {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* width: 450px; */
+  font-family: sans-serif;
+  width: 400px;
+  /* height: 500px; */
+  margin-top: 10.5%;
+}
+
+.flexDiv {
+  padding: 2px;
+  display: flex;
+  /* display: block; */
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.flexDiv > div {
+  padding: 5px 0px;
+}
+.flexDiv > div > img {
+  width: 80px;
+  /* height: 60px; */
+  display: block;
+  align-items: center;
+}
+.priceDiv-r {
+  align-items: left;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-size: 13px;
+  text-align: end;
+}
+.priceDiv-r > div + div + div {
+  color: #0046be;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 800;
+}
+.desc-r {
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+.itemTotal {
+  display: flex;
+  padding: 7px 0px;
+  justify-content: space-between;
+  line-height: 2;
+  letter-spacing: 1.2px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.totalDiv-r {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.rightinner {
+  padding: 15px 30px;
+  line-height: 1.5;
+  font-size: 13px;
+}
+.rightinner > div > h2 {
+  font-size: 27px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+.rightinner > div + div + div + div {
+  padding-top: 10px;
+  font-size: 14px;
+}
+hr {
+  opacity: 0.3;
+}
+#grid-div {
+  border: 1px solid green;
+  /* grid-template-columns: repeat(1, 1fr); */
+}
