@@ -40,7 +40,7 @@ function display(data) {
         let parent_div = document.createElement('div');
         parent_div.setAttribute("id", "item-container");
 
-        // are cart ka price el.price re html me 
+        
         // product image
         let div1 = document.createElement('div');
         div1.setAttribute("id", "pimage");
