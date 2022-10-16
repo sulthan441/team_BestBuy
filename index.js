@@ -27,7 +27,7 @@ const getTotal = () => {
         sum += cart[i].quantity * cart[i].price;
     }
     return sum;
-// 
+
 }
 
 
