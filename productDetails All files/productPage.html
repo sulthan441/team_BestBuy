@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Page</title>
-    <link rel="stylesheet" href="./components/bottom.css" />
-    <link rel="stylesheet" href="./CSS files/productPage.css" />
+    <link rel="stylesheet" href="../Bottom All files/bottom.css" />
+    <link rel="stylesheet" href="./productPage.css" />
   </head>
   <body>
     <hr />
@@ -14,9 +14,9 @@
     <div id="productDetail">
       <div>
         <div>
-          <a href="index.html">Best Buy</a>
+          <a href="home.html">Best Buy</a>
           <span style="font-weight: 1000; font-size: larger">></span>
-          <a href="index.html"> All Categories</a>
+          <a href="home.html"> All Categories</a>
           <span style="font-weight: 1000; font-size: larger">></span>
           <a href="productPage.html">Product</a>
           <a href=""></a>
@@ -35,12 +35,12 @@
             </p>
           </div>
           <div>
-            <span>Rating: <a href="">4.8 (12,460 Reviews)</a></span>
+            <span>Rating: <a href=""> 4.8 (12,460 Reviews)</a></span>
             <a href="">24 Expert Reviews</a>
             <a href="">372 Answered Question</a>
           </div>
           <div>
-            <img
+            <img id="mainProduct"
               src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6418/6418597_sd.jpg;maxHeight=640;maxWidth=550"
               alt="img"
             />
@@ -85,7 +85,7 @@
             ><span>has a demo model on display</span>
           </p>
           <hr />
-          <button id="cartButton" style="background-color: yellow;" >Add to Cart</button>
+          <button onclick="cartProducts()" id="cartButton" style="background-color: yellow;" >Add to Cart</button>
           <button style="background-color: #0046be;">Build A Bundle</button>
           <div>
             <div>
@@ -760,16 +760,16 @@
 </html>
 
 <script type="module">
-  import bottom from "./components/bottom.js";
+  import bottom from "../Bottom All files/bottom.js";
   document.querySelector("#bottomContainer").innerHTML = bottom();
 </script>
 
 <script>
   document.querySelector("#cartButton").addEventListener("click", addToCart);
 
-  function addToCart() {
-    console.log("I am cartBtn");
-  }
+  // function addToCart() {
+  //   console.log("I am cartBtn");
+  // }
   console.log('I am in productPage.html page script');
   const rightBtn = document.querySelector("#right-button");
   const rightBtn1 = document.querySelector("#right-button1");
@@ -798,4 +798,4 @@
     event.preventDefault();
   });
 </script>
-<script src="./script files/productPage.js"></script>
+<script src="./productPage.js"></script>
