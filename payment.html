@@ -11,12 +11,29 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="payment.css" />
   </head>
+  <style>
+    .fa-brands {
+      font-size: 30px;
+    }
+    .fa-brands:hover {
+      color: black;
+    }
+    .fa-solid {
+      color: black;
+    }
+  </style>
   <body>
     <div id="nav-main">
       <div id="nav">
         <div id="nav-left">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
           <div>
             <img
               src="https://pilbox.themuse.com/image.png?url=https%3A%2F%2Fassets.themuse.com%2Fuploaded%2Fcompanies%2F12361%2Fsmall_logo.png%3Fv%3Dcca82ab440189ea8aca0cea70d2efd3bb26d218297e85ea5e2a9784166ea6658&h=630&mode=fill&prog=1&w=1200"
@@ -189,7 +206,7 @@
 
           <!-- left Div -3 starts -->
           <div id="left-div-3">
-            <input type="checkbox" />
+            <input type="checkbox" id="check" style="accent-color: red" />
             <span
               >By Placing your order, you agree to our
               <a href="">BestBuy.com Terms and Conditions.</a></span
@@ -208,7 +225,7 @@
           <div>Alea</div>
           <div>Ready for pickup today is about 1 hour</div>
           <div id="grid-div">
-            <div class="flexDiv">
+            <!-- <div class="flexDiv">
               <div class="desc-r">
                 <img
                   src="https://i.gadgets360cdn.com/products/large/moto-g52-db-709x800-1649827920.jpg"
@@ -224,42 +241,18 @@
                 <div>Qty-1</div>
                 <div>Remove</div>
               </div>
-            </div>
-            <div class="flexDiv">
-              <div class="desc-r">
-                <img
-                  src="https://i.gadgets360cdn.com/products/large/moto-g52-db-709x800-1649827920.jpg"
-                  alt=""
-                />
-                <div id="title">
-                  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space
-                  Gray >
-                </div>
-              </div>
-              <div class="priceDiv-r">
-                <div style="font-weight: bold">$299.9</div>
-                <div>Qty-1</div>
-                <div>Remove</div>
-              </div>
-            </div>
-            <div class="flexDiv">
-              <div class="desc-r">
-                <img
-                  src="https://i.gadgets360cdn.com/products/large/moto-g52-db-709x800-1649827920.jpg"
-                  alt=""
-                />
-                <div id="title">
-                  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space
-                  Gray >
-                </div>
-              </div>
-              <div class="priceDiv-r">
-                <div style="font-weight: bold">$299.9</div>
-                <div>Qty-1</div>
-                <div>Remove</div>
-              </div>
-            </div>
+            </div> -->
+            <!-- order sumary product append here  -->
           </div>
+          <div id="coponDiv">
+            <img
+              src="https://www.cyberlink.com/stat/edms/english/2020/Q1/Coupon/images/coupon.jpg"
+              alt=""
+            />
+            <input type="text" id="cop" />
+            <button id="apply">Apply</button>
+          </div>
+
           <hr />
           <div class="itemTotal">
             <div class="item">
@@ -267,14 +260,19 @@
               <div>Store Pickup</div>
             </div>
             <div class="priceBelowItem">
-              <div>$299.9</div>
+              <div id="sub-total">
+                <!-- subtotal price append here  -->
+              </div>
               <div style="font-size: 12px">FREE</div>
             </div>
           </div>
           <hr />
+
           <div class="totalDiv-r">
             <div><h2>Total</h2></div>
-            <div><h2>$314.13</h2></div>
+            <div id="p-Div">
+              <!-- total price append -->
+            </div>
           </div>
         </div>
       </div>

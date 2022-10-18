@@ -1,0 +1,19 @@
+#placeOrder {
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction: column;
+  border: 2px solid green;
+  width: fit-content;
+  overflow-y: scroll;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+}
+#placeOrder img {
+  width: 100px;
+}
+#placeOrder > div {
+}
+#confirm {
+  display: flex;
+}
