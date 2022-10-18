@@ -1,36 +1,38 @@
-const arr = [
-  {
-    img_url:
-      "https://img.global.news.samsung.com/za/wp-content/uploads/2018/11/qledtv-q9fn_front-1.jpg",
-    title: "  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space",
-    price: 1999,
-  },
-  {
-    img_url:
-      "https://i.gadgets360cdn.com/products/large/moto-g52-db-709x800-1649827920.jpg",
-    title: "  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space",
-    price: 1999,
-  },
-  {
-    img_url:
-      "https://i.gadgets360cdn.com/products/large/moto-g52-db-709x800-1649827920.jpg",
-    title: "  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space",
-    price: 1999,
-  },
-  {
-    img_url:
-      "https://images.samsung.com/is/image/samsung/in-full-hd-tv-te50fa-ua43te50fakxxl-frontblack-231881877?$650_519_PNG$",
-    title:
-      "  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space",
-    price: 1999,
-  },
-];
-localStorage.setItem("arr", JSON.stringify(arr));
-var ar = JSON.parse(localStorage.getItem("arr")) || [];
-console.log(ar);
-displayData(ar);
+const arr=JSON.parse(localStorage.getItem("cart")) || [];
+// const arr = [
+//   {
+//     img_url:
+//       "https://img.global.news.samsung.com/za/wp-content/uploads/2018/11/qledtv-q9fn_front-1.jpg",
+//     title: "  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space",
+//     price: 1999,
+//   },
+//   {
+//     img_url:
+//       "https://i.gadgets360cdn.com/products/large/moto-g52-db-709x800-1649827920.jpg",
+//     title: "  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space",
+//     price: 1999,
+//   },
+//   {
+//     img_url:
+//       "https://i.gadgets360cdn.com/products/large/moto-g52-db-709x800-1649827920.jpg",
+//     title: "  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space",
+//     price: 1999,
+//   },
+//   {
+//     img_url:
+//       "https://images.samsung.com/is/image/samsung/in-full-hd-tv-te50fa-ua43te50fakxxl-frontblack-231881877?$650_519_PNG$",
+//     title:
+//       "  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space  Apple - 10.2 inch i pad (latest Model)with Wi-Fi 64GB - space",
+//     price: 1999,
+//   },
+// ];
+// localStorage.setItem("arr", JSON.stringify(arr));
+// var ar = JSON.parse(localStorage.getItem("arr")) || [];
+console.log(arr);
+displayData(arr);
 
 function displayData(a) {
+  console.log(a)
   document.getElementById("grid-div").innerHTML = "";
 
   a.map(function (elem, index) {
@@ -41,11 +43,11 @@ function displayData(a) {
     desc.setAttribute("class", "desc-r");
 
     const imgTag = document.createElement("img");
-    imgTag.src = elem.img_url;
+    imgTag.src = elem.image;
 
     const title = document.createElement("div");
     title.setAttribute("id", "title");
-    title.innerHTML = elem.title;
+    title.innerHTML = elem.name;
 
     desc.append(imgTag, title);
 
@@ -53,10 +55,10 @@ function displayData(a) {
     priceDiv.setAttribute("class", "priceDiv-r");
 
     const pri_d = document.createElement("div");
-    pri_d.innerText = "₹ " + elem.price;
+    pri_d.innerText = "$ " + (elem.price *elem.quantity);
 
     const qty = document.createElement("div");
-    qty.innerText = "Qty:2";
+    qty.innerText = elem.quantity;
 
     const rem = document.createElement("div");
 
@@ -72,15 +74,15 @@ function displayData(a) {
   calTotalPrice();
 }
 function deleteDate(index) {
-  ar.splice(index, 1);
-  localStorage.setItem("arr", JSON.stringify(ar));
-  displayData(ar);
+  arr.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(arr));
+  displayData(arr);
 }
 
 // Total price add
 function calTotalPrice() {
-  var total = ar.reduce(function (acc, ele) {
-    return acc + ele.price;
+  var total = arr.reduce(function (acc, ele) {
+    return acc + parseInt(ele.price);
   }, 0);
   console.log(total);
   appendPrice(total);
@@ -105,9 +107,9 @@ const couponApply = (total) => {
 function appendPrice(price) {
   document.getElementById("sub-total").innerHTML = "";
   document.querySelector("#p-Div").innerHTML = "";
-  document.getElementById("sub-total").append("₹ " + price);
+  document.getElementById("sub-total").append("$ " + price);
   var para = document.createElement("h2");
-  para.innerText = "₹ " + price;
+  para.innerText = "$ " + price;
   document.querySelector("#p-Div").append(para);
 }
 // payment Form

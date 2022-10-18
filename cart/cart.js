@@ -97,6 +97,38 @@ document.querySelector("#PP-btn").addEventListener('click',()=>{
     window.location.href = "../PaymentPage/payment.html";
 });
 
+let goTOHome = document.getElementById("bestBLogo")
+goTOHome.style.cursor = "pointer"
+goTOHome.addEventListener("click", () => {
+    window.location.href = "../home_page/homePageHTML/homePage.html"
+})
+
+// go to cart=>
+
+let cartPage = document.getElementById("cart");
+cartPage.style.cursor = "pointer"
+cartPage.addEventListener("click", () => {
+    window.location.href = "./cart.html"
+
+})
+
+let signIn = document.getElementById("signIn")
+let signUp = document.getElementById("cA");
+
+signIn.addEventListener("click", openSignIn)
+signUp.addEventListener("click", openSignUp)
+
+function openSignIn() {
+    window.location.href = "../login_signup/login_signup_html/login.html"
+}
+
+function openSignUp() {
+    window.location.href = "../login_signup/login_signup_html/signup.html";
+}
+
+
+
+
 let cart=JSON.parse(localStorage.getItem("cartProduct")) || [];
 
 
@@ -213,7 +245,67 @@ function totalprice(data){
     document.querySelector("#cart-total").innerHTML="$"+total;
 }
 
+// checking debouncing
+document.querySelector("#inp").addEventListener("keyup", () => {
+    // let listDiv = document.getElementById("item-list");
+    let serchVal= document.getElementById("inp").value;
+    if(serchVal=="") {
+        document.getElementById("list-item").style.display = "none";
+    }
+    else{
+        console.log(serchVal);
+        document.getElementById("list-item").style.display = "block";
+    }
+});
+async function debounceFun() {
+    let res = await fetch("https://api.jsonbin.io/v3/b/634e72a40e6a79321e2c659a");
+    let xyz = await res.json();
+    console.log(xyz.record.ProductArr);
+    abc(xyz.record.ProductArr);
+}
 
+
+document.getElementById("inp").addEventListener("keyup",()=>{
+    let inp=document.getElementById("inp").value;
+    console.log(inp)
+    debounceFun();
+      
+    
+})
+
+
+function abc(x){
+let inp=document.getElementById("inp").value;
+if(inp === ""){
+    document.querySelector("#list-item").innerHTML = null;
+    console.log("null")
+}else{
+
+    let filter=x.filter(function(el){
+         return el.name.toLowerCase().includes(inp)
+    }) 
+    console.log(filter)
+    appendData(filter);
+ }
+}
+
+
+function appendData(data) {
+    console.log(data);
+    document.querySelector("#list-item").innerHTML = null;
+    data.forEach(el => {
+        let list = document.createElement("li")
+        let img = document.createElement("img");
+        img.src = el.image;
+        let title = document.createElement("p");
+        title.innerHTML = el.name;
+    //     let price=document.createElement("h4");
+    //     price.innerHTML=el.price;
+            list.append(title,img);
+    //     div.append(img, title,price);
+        document.querySelector("#list-item").append(list);
+    });
+}
 
 
 
