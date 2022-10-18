@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../Bottom All files/bottom.css" />
+    <link rel="stylesheet" href="./productPage.css" />
+  </head>
+  <body>
+    <hr />
+    <div id="container">
+    <div id="productDetail">
+      <div>
+        <div>
+          <a href="home.html">Best Buy</a>
+          <span style="font-weight: 1000; font-size: larger">></span>
+          <a href="home.html"> All Categories</a>
+          <span style="font-weight: 1000; font-size: larger">></span>
+          <a href="productPage.html">Product</a>
+          <a href=""></a>
+        </div>
+        <div>
+          <h1>
+            MacBook Pro 14" Laptop - Apple M1 Pro chip - 16GB Memory - 512GB SSD
+            (Latest Model) - Space Gray
+          </h1>
+          <div>
+            <p style="font-weight: bold">
+              Model: <span style="font-weight: 100"> MKGP3LL/A</span>
+            </p>
+            <p style="font-weight: bold">
+              SKU: <span style="font-weight: 100"> 6450853</span>
+            </p>
+          </div>
+          <div>
+            <span>Rating: <a href=""> 4.8 (12,460 Reviews)</a></span>
+            <a href="">24 Expert Reviews</a>
+            <a href="">372 Answered Question</a>
+          </div>
+          <div>
+            <img id="mainProduct"
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6418/6418597_sd.jpg;maxHeight=640;maxWidth=550"
+              alt="img"
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h1>$1999.00</h1>
+          <div>
+            <div>
+              <h3>Configure your Device</h3>
+            </div>
+            <label for="">Total Storage Capacity</label>
+            <br>
+            <select name="" id="">
+              <option value="">256GB</option>
+              <option value="">512GB</option>
+              <option value="">1TB</option>
+            </select>
+            <div>
+              <a href="">How much storage do I need?</a>
+            </div>
+            <br>
+            <label for="">Graphics</label>
+            <br>
+            <select name="" id="">
+              <option value="">HDD Graphics</option>
+              <option value="">PENTIUM Graphics</option>
+            </select>
+            <div>
+              <a href="">What's the right graphics card for me?</a>
+            </div>
+          </div>
+          <!-- <div>
+            <p style="font-weight: bolder">Color: <span>White</span></p>
+          </div> -->
+          <a href="">See All Specifications</a>
+          <hr />
+          <p style="font-weight: bolder">
+            See it in-store: <a href="">Aiea</a
+            ><span>has a demo model on display</span>
+          </p>
+          <hr />
+          <button onclick="cartProducts()" id="cartButton" style="background-color: yellow;" >Add to Cart</button>
+          <button style="background-color: #0046be;">Build A Bundle</button>
+          <div>
+            <div>
+              <input type="checkbox"/>
+              <label for="">Compare</label>
+            </div>
+            <a href="">Save</a>
+          </div>
+        </div>
+        <div></div>
+        <div>
+          <details open>
+            <summary>More to consider</summary>
+            <div id="viewedProduct">
+              <div class="viewproductsS">
+                <!-- <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button onclick="addToCart()" id="cartButton" >Add to Cart</button>
+                </div>
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button id="cartButton" >Add to Cart</button>
+                </div>
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button id="cartButton" >Add to Cart</button>
+                </div>
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>4Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button id="cartButton" >Add to Cart</button>
+                </div> -->
+              </div>
+            </div>
+          </details>
+          <details>
+            <summary>People also bought</summary>
+            <div id="viewedProductS">
+              <div class="viewproductsS">
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button id="cartButton" >Add to Cart</button>
+                </div>
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button id="cartButton" >Add to Cart</button>
+                </div>
+                <div class="viewItemS">
+                  <img
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                    alt="logo"
+                  />
+                  <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+                  <h5>$999.99</h5>
+                  <button id="cartButton" >Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+    <div id="description">
+      <div>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Overview</summary>
+          <div class="info">
+            <div>
+              <p>Description</p>
+            </div>
+            <div>
+              <p>
+                The new MacBook Pro delivers game-changing performance for pro
+                users. With the powerful M1 Pro to supercharge pro-level
+                workflows while getting amazing battery life.¹ And with an
+                immersive 14-inch Liquid Retina XDR display and an array of pro
+                ports, you can do more than ever with MacBook Pro.
+              </p>
+            </div>
+          </div>
+          <div class="info">
+            <div>
+              <p>Features</p>
+            </div>
+            <div>
+              <p>
+                Apple M1 Pro or M1 Max chip for a massive leap in CPU, GPU, and
+                machine learning performance Up to 10-core CPU delivers up to
+                3.7x faster performance to fly through pro workflows quicker
+                than ever³ Up to 32-core GPU with up to 13x faster performance
+                for graphics-intensive apps and games³ 16-core Neural Engine for
+                up to 11x faster machine learning performance³ Longer battery
+                life, up to 17 hours¹ Up to 64GB of unified memory so everything
+                you do is fast and fluid Up to 8TB of superfast SSD storage
+                launches apps and opens files in an instant Stunning 14-inch
+                Liquid Retina XDR display with extreme dynamic range and
+                contrast ratio² 1080p FaceTime HD camera with advanced image
+                signal processor for sharper video calls Six-speaker sound
+                system with force-cancelling woofers Studio-quality
+                three-microphone array captures your voice more clearly Three
+                Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack,
+                MagSafe 3 port Next-generation Wi-Fi 6 for faster connectivity
+                Backlit Magic Keyboard with Touch ID for secure unlock and
+                payments macOS Monterey lets you connect, share, and create like
+                never before, with exciting new FaceTime updates and a
+                redesigned Safari Available in space gray and silver
+                Configurable options are available. ¹Battery life varies by use
+                and configuration. See apple.com/batteries for more information.
+                ²The display on the 14-inch MacBook Pro has rounded corners at
+                the top. When measured as a standard rectangular shape, the
+                screen is 14.2 inches diagonally (actual viewable area is less).
+                ³Compared with previous generation.
+              </p>
+            </div>
+          </div>
+        </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Specifications</summary>
+
+             <div class="info">
+              <div>
+
+                <div> <b>Display Type</b></div>
+              </div>
+              <div>
+
+                <div>LED</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>Resolution</b></div>
+              </div>
+              <div>
+
+                <div>4K (2160p)</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>Screen Size Class</b></div>
+              </div>
+              <div>
+
+                <div>70 inches</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>High Dynamic Range (HDR)</b></div>
+              </div>
+              <div>
+
+                <div>Yes</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>High Dynamic Range Format</b></div>
+              </div>
+              <div>
+
+                <div>HDR 10, Hybrid Log-Gamma (HLG)</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>LED Panel Type</b></div>
+              </div>
+              <div>
+
+                <div>Standard LED</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>Backlight Type</b></div>
+              </div>
+              <div>
+
+                <div>Direct Lit</div>
+              </div>
+             </div>
+
+             <div class="info">
+              <div>
+
+                <div> <b>Refresh Rate</b></div>
+              </div>
+              <div>
+
+                <div>60Hz</div>
+              </div>
+             </div>
+             
+             <div class="info">
+              <div>
+
+                <div> <b>Smart Platform</b></div>
+              </div>
+              <div>
+
+                <div>webOS</div>
+              </div>
+             </div>
+             
+             <div class="info">
+              <div>
+
+                <div> <b>Featured Streaming Services</b></div>
+              </div>
+              <div>
+
+                <div>HBO Max, Netflix, Prime Video, Disney+, Apple TV+, Hulu, Paramount+, Peacock, YouTube TV, Spotify, iHeartRadio</div>
+              </div>
+             </div>
+             
+             <div class="info">
+              <div>
+
+                <div> <b>Number of HDMI Inputs (Total)</b></div>
+              </div>
+              <div>
+
+                <div>3</div>
+              </div>
+             </div>
+             
+             <div class="info">
+              <div>
+
+                <div> <b>Works With</b></div>
+              </div>
+              <div>
+
+                <div>Google Assistant, Amazon Alexa, Apple HomeKit</div>
+              </div>
+             </div>
+             
+             <div class="info">
+              <div>
+
+                <div> <b>Voice Assistant Built-in</b></div>
+              </div>
+              <div>
+
+                <div>Google Assistant, Amazon Alexa</div>
+              </div>
+             </div>
+        </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Question & Ans</summary>
+          <div class="info">
+            <div>
+              <p>Q1.</p>
+            </div>
+            <div>
+              <p>: QuestionIs the delivery time/store pick up date accurate? Or are they delaying orders?</p>
+            </div>
+          </div>
+          <div class="info">
+            <div>
+              <p>Ans.</p>
+            </div>
+            <div>
+              <p>: Delivery times are never accurate. Bestbuy has changed my delivery date 5 times already. Honestly will never order from bestbuy again.</p>
+            </div>
+          </div>
+          <div class="info">
+            <div>
+              <p>Q2.</p>
+            </div>
+            <div>
+              <p>: QuestionWhat change in these model from the previous model</p>
+            </div>
+          </div>
+            <div class="info">
+              <div>
+                <p>Ans.</p>
+              </div>
+              <div>
+                <p>: Answer It has a new processor designed by Apple called the M1. It is stated to be faster and more efficient than the Intel's they sell. There are a few little changes, this is just the largest change.</p>
+              </div>
+            </div>
+          <div class="info">
+            <div>
+              <p>Q3.</p>
+            </div>
+            <div>
+            </div>
+            <p>: QuestionWill this go on sale for Black Friday?</p>
+          </div>
+          <div class="info">
+            <div>
+              <p>Ans.</p>
+            </div>
+            <div>
+              <p>: Answer Most likely not. Given this has just now released and how new it is, it will most likely not go on a black Friday sale this year.</p>
+            </div>
+          </div>
+            </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Reviews</summary>
+          <div class="info">
+            <div>
+              <p style="color: #0457c8">Melody</p>
+            </div>
+            <div>
+              <p>
+                I purchased this for myself for my birthday after months of
+                research. This beautiful rose gold powerhouse is a sexy
+                streamlined piece of art! I was a window user all my
+                life...until now. Smooth...long battery life..quite...no fan!!!
+              </p>
+            </div>
+          </div>
+        </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>Buying Options</summary>
+          <div class="info">
+            <div>
+              <p>Options</p>
+            </div>
+            <div>
+              <p>
+                <ul>
+                  <li style="font-weight: bolder;">Open-Box Excellent - Certified</li>
+                  <li>Minor to moderate cosmetic signs of use possible</li>
+                  <li>Any signs of use will not impact performance</li>
+                  <li>Nonessential parts or accessories may be missing</li>
+                  <li style="font-weight: bolder;">Open-Box Satisfactory</li>
+                  <li>Looks brand new</li>
+                  <li>Includes all original parts/accessories</li>
+                  <li>Typically contains packaging</li>
+                  <li>Verified to work properly</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </details>
+        <hr />
+        <details class="someMoreInfo">
+          <summary>From the Manufacturer</summary>
+          <div class="info">
+            <img style="padding: 10px;" src="https://lh3.googleusercontent.com/pbluDEXVYmvtXDHCEmot-OAXTM8HLUNmmJw_o2eRUE56DYRhKqIXc-hUL8_oLAyXzGOHTX2dLy-WxEceH-ZWXV6gueQhAGR7h_0Q8u3asX1LMRRkEjFNa6m34klRtDrKgKvDDQdApCfycexetrxTKvsFVn-RFGc4tVaa2OekAglJGjhmDu7zmpxhyJ7vEDtVFf9ufieUk7gOWmmRxAfU24WhvunH93Ftr-VsZEtff4VuG1Vpoo-04Rgg_EuvIjbWxLkxssPLO3l3Ys5nZ1OvoDyxB8xDR7wsJQcZxUfPN2zz6RdF8obH5DIKRffrIPOFHyJ0tQWcMa7f8VQWkiLjh5feJM2TKFRNfv_jD24URDatz9JcXne5rul0PkbvYvJqIjhIIeXbqy5DJ-WBNGnMw8GkVniCFcjlsI5QMXHrifQYH-pRyAspZ68s5Hvu2OJ-gigpe6W1RdVGUF27WwwYZ5-gKHaeVDtFZ_uHD-pzqnk966wS9WY58JeIDHicOWxjNdBt_HDRF-90RalNX32rN4UFFpg7e4oa9HaX8F9nqqKmxGLnSi54648r9zYcmTb5pmCoCrjMimghkNjM0BQ5f97ZbGR3l9vGllcmH6TeuIfP4asXajDi0GiXLdnRhzZ36R8__i5rdLSpUiaat1v0DWnZ4baAGw5GcZSSPgZnWDpdGTiSDztJO5nsbk-3KPKSvj1RGuBFllzYUO1mC7bKBkvO0wiLjd7OgKxAccXo8XuLE2sad8b3ohZZBvYobubocVLGwWhBvscc2SAzzO7d2jZ8acJsbmKUAqw9grtyXAUiUpqlE_u5fNzs6fbwPkBuuFmxZQG-oAhLek6q9rIlBDmci-sK0uG4kYfgVt_xIQSAgqkUca-QY2op59zPFPzZ6LOIRnm7wJZlHa2C1ovL20roBBnQISANG4CrHqJ7HrITX6SFEsOuinMa_BPpuYDpIBQoql_xrp4=w724-h392-no?authuser=0" alt="Manufacturer1">
+            <div>
+              <p></p>
+            </div>
+            <div>
+              <p></p>
+            </div>
+          </div>
+          <div class="info">
+            <img style="padding: 10px;" src="https://lh3.googleusercontent.com/sZB4sem0fl6gQbu23n-kwhfyrYccdP3Q3uDzTEJC3eB0YIFFKnf_q0RFKpCriSWahKXE3HhIyyvpD7KOamUrKc4vxQ2viAkPPrft1D0JMjsCewX12QqMDeM6od_7LfbPRm1AggGQAdcwPI2Vh08aoMa560jCFuJQZNmfSkLyGf0j5hIUaO1O4n39N5Ittiy10aNRxkh2fWE2Z5Vqvv-wQN1enfIYGWNlE_wmcx8snO_-Y-OvuNHUbcchUrcHXMQhfcY4H1PCxI1XaEjHWaj3igHCjW6B8xigfUTCA76d-Vq2VRlsJWh6irhWnxEWbSlbYnnWdB6CEFklLGWqkholwguT2R-urs8m2g-pdXYWaZ38nhvZTOkJW_PqOdI7U7wZyvF0g5DQ8J-mRhbRbFFyN-nS1dbaSsKPeNbcbM4hkiBi-hDIRGNcqfOi0ub9ADHUloC9Sa9w2T6vviFk6VscXpJXzlbZ_od1oKQELSlCRw3naSkK8IcP4qOUEfVPK3nEF9-AZ8JR3DwjVI5vF9m7RQlXDbuci67-idiPCoHVnF8yyr1nH4N_JlMmLdjy38IjaG9ll-F6udAxl0tvFgS1NID9fQAS08keTw3kd3sA6vDlovlWRHn8e3wGq3-8gzi5pJWFRyHTLOXvvBhRyyKCvNtY0Gcyr6bM-wSbAIti3tqecPixbUfzwWzCNylQcFO2nnqqes9cGpwhu6k0hRDiw3DQoev5QDnsxX6pvD3upWI1CXMeGy-BWfBUZVlF_9wFaHo-SKGuZ7JZ17frwdwiW57EXJxNn-8HHom1gIfQs1I9OkT8qkBgxQsuCJkmj3CLgMJtaCivttKnXdV2QEL_Scglbt28G2_rPzsTqOAKGITOB-yg5-5-ITEUZ5SwJKn4PZFlYXnMTXKx5asmsEKAbex6qLORZhSieuYc_nfb9-nuIk0Tkd7VUg7jvtMmDHUbaADax93yNd4=w842-h463-no?authuser=0" alt="Manufacturer">
+            <div>
+              <p></p>
+            </div>
+            <div>
+              <p></p>
+            </div>
+          </div>
+        </details>
+      </div>
+      <hr />
+    </div>
+    <div id="saveMore">
+      <h2>Complete your purchase</h2>
+      <hr />
+    </div>
+    <div id="alsoBought">
+      <h2>People also bought</h2>
+      <hr />
+      <div id="alsoBughtProducts">
+        <div id="viewedProducts">
+          <button id="left-button"><</button>
+          <div class="viewproducts" id="content">
+            <!-- <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button id="cartButton" >Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button id="cartButton" >Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button id="cartButton" >Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>4Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button id="cartButton" >Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>5Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button id="cartButton" >Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>6Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button id="cartButton" >Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>7Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button id="cartButton" >Add to Cart</button>
+            </div>
+            <div class="viewItem">
+              <img
+                src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+                alt="logo"
+              />
+              <p>8Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+              <h5>$999.99</h5>
+              <button id="cartButton" >Add to Cart</button>
+            </div> -->
+          </div> 
+          <!-- <div class="right"> -->
+          <button id="right-button">></button>
+          <!-- right div -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <div id="mostViewed">
+      <h2>Most viewed sponsored products</h2>
+      <hr />
+      <div id="viewedProducts">
+        <button id="left-button1"><</button>
+        <div class="viewproducts" id="content1">
+          <!-- <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>1Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button id="cartButton" >Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>2Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button id="cartButton" >Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>3Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button id="cartButton" >Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>4Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button id="cartButton" >Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>5Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button id="cartButton" >Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>6Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button id="cartButton" >Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>7Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button id="cartButton" >Add to Cart</button>
+          </div>
+          <div class="viewItem">
+            <img
+              src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502228_sd.jpg;maxHeight=150;maxWidth=170"
+              alt="logo"
+            />
+            <p>8Lenovo - Yoga 7i 14" 2.2K Touch 2-in-1 Laptop</p>
+            <h5>$999.99</h5>
+            <button id="cartButton" >Add to Cart</button>
+          </div> -->
+        </div>
+        <button id="right-button1">></button>
+      </div>
+    </div>
+    <div id="similarProducts">
+      <h2>Similar products from outside of Best Buy</h2>
+      <div id="similarProduct">
+        <!-- <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a>
+        <a href="">
+          <div>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThQyrzoOvWoecP6mYjZfsb5q1xaimsPdMZIcsmBYwjtLcBMQIBUO7ZKp0wB5QRwUPvHi39aaRPg68aLEjXUeOB2tErciyE8cIMWDdyRM3JgbvJdj410qntlw&usqp=CAs"
+              alt="pic"
+            />
+            <p>Lenovo Legion 5 Pro</p>
+            <p>₹1,41,990.00</p>
+            <p>Lenovo India</p>
+          </div>
+        </a> -->
+      </div>
+    </div>
+    <hr style="visibility: hidden" />
+    <br>
+  </div>
+    <div id="bottomContainer"></div>
+  </body>
+</html>
+
+<script type="module">
+  import bottom from "../Bottom All files/bottom.js";
+  document.querySelector("#bottomContainer").innerHTML = bottom();
+</script>
+
+<script>
+  document.querySelector("#cartButton").addEventListener("click", addToCart);
+
+  // function addToCart() {
+  //   console.log("I am cartBtn");
+  // }
+  console.log('I am in productPage.html page script');
+  const rightBtn = document.querySelector("#right-button");
+  const rightBtn1 = document.querySelector("#right-button1");
+  const leftBtn = document.querySelector("#left-button");
+  const leftBtn1 = document.querySelector("#left-button1");
+
+  rightBtn.addEventListener("click", function (event) {
+    const conent = document.querySelector("#content");
+    conent.scrollLeft += 220;
+    event.preventDefault();
+  });
+  rightBtn1.addEventListener("click", function (event) {
+    const conent = document.querySelector("#content1");
+    conent.scrollLeft += 220;
+    event.preventDefault();
+  });
+
+  leftBtn.addEventListener("click", function (event) {
+    const conent = document.querySelector("#content");
+    conent.scrollLeft -= 220;
+    event.preventDefault();
+  });
+  leftBtn1.addEventListener("click", function (event) {
+    const conent = document.querySelector("#content1");
+    conent.scrollLeft -= 220;
+    event.preventDefault();
+  });
+</script>
+<script src="./productPage.js"></script>
