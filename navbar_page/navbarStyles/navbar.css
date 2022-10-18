@@ -294,8 +294,10 @@ ul {
     /* overflow: scroll; */
     animation: .5s ease-in op;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    z-index: 1;
 
 }
+
 
 #menuBox>div:nth-child(1)>div>div {
     width: 90%;

@@ -1,3 +1,183 @@
+import navbar from "../../navbar_page/navbar_export/navbar_export.js"
+document.querySelector("#navbarLink").innerHTML=navbar();
+let hamb = document.getElementById("menuDiv")
+hamb.addEventListener("click",showMenuBox);
+
+var c = 0;
+function showMenuBox(){
+    // alert()
+   
+
+    let menuBox = document.getElementById("menuBox");
+
+    if(c % 2 == 0){
+        menuBox.style.display = "block";
+        let close = document.getElementById("change")
+
+        close.textContent = "close";
+        close.style.transition = "1s linear"
+    }
+    
+    if(c % 2 == 1){
+        menuBox.style.display = "none";
+        
+
+        let close = document.getElementById("change")
+
+        close.textContent = "menu";
+        close.style.transition = "1s linear"
+    
+    }
+    c++;
+    
+}
+
+// ///////showMenuBox()
+
+let outerBox1 = document.getElementById("outerBox1");
+outerBox1.addEventListener("click",showNext);
+var o = 0;
+function showNext(){
+    let ch = document.getElementById("ch")
+    
+    let ext = document.getElementById("extend");
+    if (o % 2 == 0) {
+        ext.style.display = "block";
+        outerBox1.style.backgroundColor = "#0046c4"
+        ch.style.color = "white";
+        
+    }
+
+    if (o % 2 == 1) {
+        ext.style.display = "none";
+        outerBox1.style.backgroundColor = "white"
+        ch.style.color = "#0046c4";
+    }
+    o++;
+    
+}
+
+let ap = document.getElementById("ap");
+ap.addEventListener("click",()=>{
+    addLaptopData()
+    
+})
+
+let tv5 = document.getElementById("tv");
+tv5.addEventListener("click",()=>{
+    addTvData()
+})
+
+
+let acc1 = document.getElementById("acc")
+acc1.addEventListener("click", showAccBox);
+
+var e = 0;
+function showAccBox() {
+    
+    let ac = document.getElementById("accountPopUp");
+
+    if (e % 2 == 0) {
+        ac.style.display = "block";
+    }
+
+    if (e % 2 == 1) {
+        ac.style.display = "none";
+    }
+    e++;
+
+}
+// linking of page
+let goTOHome = document.getElementById("bestBLogo")
+goTOHome.style.cursor = "pointer"
+goTOHome.addEventListener("click", () => {
+    window.location.href = "../homePageHTML/homePage.html"
+})
+
+// go to cart=>
+
+let cartPage = document.getElementById("cart");
+cartPage.style.cursor = "pointer"
+cartPage.addEventListener("click", () => {
+    window.location.href = "../../cart/cart.html"
+
+})
+
+let signIn = document.getElementById("signIn")
+let signUp = document.getElementById("cA");
+
+signIn.addEventListener("click", openSignIn)
+signUp.addEventListener("click", openSignUp)
+
+function openSignIn() {
+    window.location.href = "../../login_signup/login_signup_html/login.html"
+}
+
+function openSignUp() {
+    window.location.href = "../../login_signup/login_signup_html/signup.html";
+}
+// link to product pages
+document.querySelector(".linktoproduct0").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+document.querySelector(".linktoproduct1").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+document.querySelector(".linktoproduct2").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+document.querySelector(".linktoproduct3").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+document.querySelector(".linktoproduct4").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+
+document.querySelector(".linktoproduct5").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+
+document.querySelector(".linktoproduct6").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+
+document.querySelector(".linktoproduct7").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+
+document.querySelector(".linktoproduct8").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+
+document.querySelector(".linktoproduct9").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+
+document.querySelector(".linktoproduct10").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+document.querySelector(".linktoproduct11").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+document.querySelector(".linktoproduct12").addEventListener("click", () => {
+    window.location.href = "../../product_page/productPageHTML/product_page.html";
+});
+
+
+
+
 var sliderArr1 = [
 
     {
@@ -437,3 +617,4 @@ function goTpd(el) {
     window.location.href = "productDescPage.html"
 
 }
+

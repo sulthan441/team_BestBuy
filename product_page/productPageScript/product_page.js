@@ -1,3 +1,95 @@
+import navbar from "../../navbar_page/navbar_export/navbar_export.js"
+document.querySelector("#navbarLink").innerHTML = navbar();
+let hamb = document.getElementById("menuDiv")
+hamb.addEventListener("click", showMenuBox);
+
+var c = 0;
+function showMenuBox() {
+    // alert()
+
+
+    let menuBox = document.getElementById("menuBox");
+
+    if (c % 2 == 0) {
+        menuBox.style.display = "block";
+        let close = document.getElementById("change")
+
+        close.textContent = "close";
+        close.style.transition = "1s linear"
+    }
+
+    if (c % 2 == 1) {
+        menuBox.style.display = "none";
+
+
+        let close = document.getElementById("change")
+
+        close.textContent = "menu";
+        close.style.transition = "1s linear"
+
+    }
+    c++;
+
+}
+
+// ///////showMenuBox()
+
+let outerBox1 = document.getElementById("outerBox1");
+outerBox1.addEventListener("click", showNext);
+var o = 0;
+function showNext() {
+    let ch = document.getElementById("ch")
+
+    let ext = document.getElementById("extend");
+    if (o % 2 == 0) {
+        ext.style.display = "block";
+        outerBox1.style.backgroundColor = "#0046c4"
+        ch.style.color = "white";
+
+    }
+
+    if (o % 2 == 1) {
+        ext.style.display = "none";
+        outerBox1.style.backgroundColor = "white"
+        ch.style.color = "#0046c4";
+    }
+    o++;
+
+}
+
+let ap = document.getElementById("ap");
+ap.addEventListener("click", () => {
+    addLaptopData()
+
+})
+
+let tv5 = document.getElementById("tv");
+tv5.addEventListener("click", () => {
+    addTvData()
+})
+
+
+let acc1 = document.getElementById("acc")
+acc1.addEventListener("click", showAccBox);
+
+var e = 0;
+function showAccBox() {
+
+    let ac = document.getElementById("accountPopUp");
+
+    if (e % 2 == 0) {
+        ac.style.display = "block";
+    }
+
+    if (e % 2 == 1) {
+        ac.style.display = "none";
+    }
+    e++;
+
+}
+
+
+
 var ProductArr = [
 
     {
@@ -373,18 +465,18 @@ var ProductArr = [
 
 
 
-
-
+let productsInCart = JSON.parse(localStorage.getItem("cartProduct")) || [];
+document.getElementById("sorting").addEventListener("change", handlePriceSort);
 function handlePriceSort() {
     let selected = document.querySelector("#sorting").value;
 
-    // console.log(selected);
+    console.log(selected);
 
-    if(selected=="Sort By"){
+    if (selected == "Sort By") {
         displayData(ProductArr);
 
     }
-    if (selected ==="Price High to Low") {
+    if (selected === "Price High to Low") {
         ProductArr.sort(function (a, b) {
             return b.price - a.price;
         });
@@ -394,51 +486,112 @@ function handlePriceSort() {
     }
 
 
-     else if (selected === "Price Low to High") {
+    else if (selected === "Price Low to High") {
         ProductArr.sort(function (a, b) {
             return a.price - b.price;
         });
         displayData(ProductArr);
         // console.log(ProductArr);
     }
-    else if(selected==="customer rating"){
+    else if (selected === "customer rating") {
         ProductArr.sort(function (a, b) {
             return b.rating - a.rating;
         });
         displayData(ProductArr);
-
+    }
+    else{
+        let sufflearr=shuffle(ProductArr);
+        displayData(sufflearr);
     }
 }
 
-
-function rating_sort(){
-    let rate=  document.getElementById("topRating");
-    if(rate.checked){
-      ProductArr.sort(function (a, b) {
-          return b.rating - a.rating;
-      });
-      displayData(ProductArr);
-  }
-  }
-
-
-function rating_lowsort(){
-  let rate=  document.getElementById("lowRating");
-  if(rate.checked){
-    ProductArr.sort(function (a, b) {
-        return a.rating - b.rating;
-    });
-    displayData(ProductArr);
-
-}
+let rate = document.getElementById("topRating");
+rate.addEventListener("click", rating_sort)
+function rating_sort() {
+    // let rate=  document.getElementById("topRating");
+    if (rate.checked) {
+        ProductArr.sort(function (a, b) {
+            return b.rating - a.rating;
+        });
+        displayData(ProductArr);
+    }
+    else{
+        let sufflearr=shuffle(ProductArr);
+        displayData(sufflearr);
+    }
 }
 
+let lowrate = document.getElementById("lowRating");
+lowrate.addEventListener("click", rating_lowsort)
+function rating_lowsort() {
+
+    if (lowrate.checked) {
+        ProductArr.sort(function (a, b) {
+            return a.rating - b.rating;
+        });
+        displayData(ProductArr);
+    }
+    else{
+        let sufflearr=shuffle(ProductArr);
+        displayData(sufflearr);
+    }
+}
+// shuffle an array of products randomly
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
+
+// linking of pages
+let goTOHome = document.getElementById("bestBLogo")
+goTOHome.style.cursor = "pointer"
+goTOHome.addEventListener("click", () => {
+    window.location.href = "../../home_page/homePageHTML/homePage.html"
+})
+
+// go to cart=>
+
+let cartPage = document.getElementById("cart");
+cartPage.style.cursor = "pointer"
+cartPage.addEventListener("click", () => {
+    window.location.href = "../../cart/cart.html"
+
+})
+
+let signIn = document.getElementById("signIn")
+let signUp = document.getElementById("cA");
+
+signIn.addEventListener("click", openSignIn)
+signUp.addEventListener("click", openSignUp)
+
+function openSignIn() {
+    window.location.href = "../../login_signup/login_signup_html/login.html"
+}
+
+function openSignUp() {
+    window.location.href = "../../login_signup/login_signup_html/signup.html";
+}
 
 
-
+let cartArray = JSON.parse(localStorage.getItem("cartProduct"))||[];
+console.log(cartArray);
+let flag=false;
 function displayData(data) {
     // console.log(ProductArr);
-    document.getElementById("products_space").innerHTML =null;
+    document.getElementById("products_space").innerHTML = null;
     // console.log(data);
     data.forEach(function (el, index) {
         let product = document.createElement("div");
@@ -457,7 +610,12 @@ function displayData(data) {
         title.innerHTML = el.name;
 
         let rating = document.createElement("h3");
-        rating.innerHTML = el.rating + "⭐";
+        
+        let star="";
+        for(var i=0; i<Math.round(el.rating); i++){
+            star = star + "⭐";
+        }
+        rating.innerHTML = el.rating+star;
 
 
         let model = document.createElement("P");
@@ -481,7 +639,7 @@ function displayData(data) {
         let cartDiv = document.createElement("div");
         cartDiv.setAttribute("id", "cartDiv");
         let price = document.createElement("h2");
-        price.innerHTML = "$"+ el.price;
+        price.innerHTML = "$" + el.price;
 
 
         let deal = document.createElement("p");
@@ -496,7 +654,20 @@ function displayData(data) {
         button.setAttribute("id", "button");
 
         button.addEventListener("click", function () {
-            addToCart(index);
+            
+        cartProductverify(el.name)
+        console.log(flag);
+            if(flag==1)
+            {
+                alert("this item is already added in the cart");
+                location. reload()
+            }
+            else{
+                alert("Item has added to cart");
+                addToCart(index);
+                location. reload()
+            }
+            
         });
         button.innerHTML = '<i class="fa-solid fa-cart-shopping "></i>' + " Add to cart";
 
@@ -521,14 +692,25 @@ displayData(ProductArr);
 
 //Add to cart data
 
-let productsInCart = JSON.parse(localStorage.getItem("cartProduct")) || [];
+// let productsInCart = JSON.parse(localStorage.getItem("cartProduct")) || [];
 function addToCart(i) {
     var product = ProductArr.filter(function (elem, index) {
         return index == i;
     });
     productsInCart.push(product[0]);
     localStorage.setItem("cartProduct", JSON.stringify(productsInCart));
-    console.log(productsInCart);
+    // console.log(productsInCart);
+}
+
+function cartProductverify(name){
+    productsInCart.forEach(e=>{
+        if(name==e.name)
+        {
+            console.log(e.name)
+            flag=true;
+        }
+        
+    })
 }
 
 
