@@ -2,15 +2,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.navCls {
-    overflow: hidden;
 
-    position: fixed;
-    top: 0;
-    width: 100%;
-    border: none;
-
-}
 
 #container {
 
@@ -29,7 +21,6 @@
     border: none;
     position: relative;
 }
-
 
 
 .belowBanner {
@@ -335,9 +326,6 @@ border: 1px solid black;
     padding-left: 26px;
 }
 
-/* .fiftyPercentDeals div{
-border: 1px solid black;
-} */
 
 .fif_btn {
     background-color: blue;
@@ -942,36 +930,8 @@ border: 1px solid red;
     width: 25%;
 }
 
-#second_div>div>h1 {
-    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: white;
-    font-weight: 700;
-    line-height: 30px;
 
-}
 
-#second_div>div>p {
-    font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: white;
-    font-weight: 300;
-    line-height: 20px;
-    margin-top: -10px;
-
-}
-
-#second_div>div>button {
-    height: 38px;
-    width: 18%;
-    background-color: yellow;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 5px;
-
-}
 
 #creditCard {
     grid-area: k;
@@ -1118,10 +1078,20 @@ border: 1px solid red;
 
 #slideImg {
     width: 80%;
+    align-items: center;
 }
 
 #btn {
     background-color: yellow;
     text-align: center;
     width: 50%;
+    height: 35px;
+}
+
+#bottomDiv {
+    background-color: white;
+}
+
+#logo {
+    width: 30%;
 }
