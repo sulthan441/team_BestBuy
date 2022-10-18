@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Buy International: Select your Language</title>
+    <style>
+      body {
+        display: block;
+        background: #101f61;
+        background: linear-gradient(
+          45deg,
+          #101f61,
+          #2b4cb6 40%,
+          #4171fc 59%,
+          #7fd8ff 85%,
+          /* #a6e4ff */
+        );
+        min-height: 100%;
+        color: white;
+      }
+      #navbar {
+        background-color: black;
+        padding: 10px 0px;
+        /* margin-top: -12px; */
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      #navbar > div {
+        display: flex;
+        gap: 30px;
+        width: 60%;
+        /* flex-direction: row-reverse; */
+        justify-content: flex-end;
+      }
+      #navbar > div > div > a {
+        color: white;
+        text-decoration: none;
+        float: left;
+        display: block;
+      }
+      #navbar > div > div > a:hover {
+        text-decoration: underline;
+      }
+      #container {
+        padding: 5% 33%;
+        margin: auto;
+      }
+      #logo > img {
+        width: 10%;
+      }
+      #choise {
+        font-size: xx-large;
+        margin-top: -40px;
+      }
+      #choise > h1:first-child {
+        margin-bottom: -50px;
+      }
+      #countryflag {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+      }
+      #countryflag > div img {
+        display: block;
+        width: 110%;
+        height: 100px;
+      }
+      #countryflag > div img:hover {
+        border: 4px solid yellow;
+        display: block;
+      }
+      #countryflag a {
+        color: white;
+        text-decoration: none;
+        display: block;
+      }
+      #about {
+        width: 95%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <div>
+          <a href="#" onclick="english();">English</a>
+        </div>
+        <div>
+          <a href="#" onclick="france()"> Français</a>
+        </div>
+        <div>
+          <a href="#" onclick="espanol()"> Español</a>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div id="logo">
+        <img
+          src="https://www.bestbuy.com/~assets/bby/_com/header-footer/images/bby_logo-a7e90594729ed2e119331378def6c97e.png"
+          alt="logo"
+        />
+      </div>
+      <div id="choise">
+        <h1>Hello!</h1>
+        <h1>Choose a country.</h1>
+      </div>
+      <div id="countryflag">
+        <div>
+          <a href="home.html">
+            <img
+              src="https://www.bestbuy.com/~assets/bby/_intl/landing_page/images/maps/canada.svg"
+              alt="flagLogo1"
+            />
+            <h2>Canada</h2>
+          </a>
+        </div>
+        <div>
+          <a href="home.html">
+            <img
+              src="https://www.bestbuy.com/~assets/bby/_intl/landing_page/images/maps/usa.svg"
+              alt="flagLogo2"
+            />
+            <h2>United States</h2>
+          </a>
+        </div>
+        <div>
+          <a href="home.html">
+            <img
+              src="https://www.bestbuy.com/~assets/bby/_intl/landing_page/images/maps/mexico.svg"
+              alt="flagLogo3"
+            />
+            <h2>Mexico</h2>
+          </a>
+        </div>
+      </div>
+      <div id="about">
+        <hr />
+        <h3>Shopping in the U.S.?</h3>
+        <p>
+          International customers can shop on www.bestbuy.com and have orders
+          shipped to any U.S. address or U.S. store.
+          <span> See More Details ></span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function english() {
+    document.querySelector("#choise > h1:first-child").innerHTML = "Hello!";
+    document.querySelector("#choise > h1:last-child").innerHTML =
+      "Choose a country.";
+    document.querySelector(
+      "#countryflag > div:first-child > a > h2"
+    ).innerHTML = "Canada";
+    document.querySelector(
+      "#countryflag > div:nth-child(2) > a > h2"
+    ).innerHTML = "United States";
+    document.querySelector("#countryflag > div:last-child > a > h2").innerHTML =
+      "Mexico";
+    document.querySelector("#about > h3").innerHTML = "Shopping in the U.S.?";
+    document.querySelector(
+      "#about > p"
+    ).innerHTML = `International customers can shop on www.bestbuy.com and have orders
+          shipped to any U.S. address or U.S. store.
+          <span> See More Details ></span>`;
+  }
+  function france() {
+    document.querySelector("#choise > h1:first-child").innerHTML = "Bonjour!";
+    document.querySelector("#choise > h1:last-child").innerHTML =
+      "Choisir un pays :";
+    document.querySelector(
+      "#countryflag > div:first-child > a > h2"
+    ).innerHTML = "Canada";
+    document.querySelector(
+      "#countryflag > div:nth-child(2) > a > h2"
+    ).innerHTML = "United States";
+    document.querySelector("#countryflag > div:last-child > a > h2").innerHTML =
+      "Mexico";
+    document.querySelector("#about > h3").innerHTML =
+      "Vous magasinez aux É.-U.?";
+    document.querySelector(
+      "#about > p"
+    ).innerHTML = `Les clients internationaux peuvent magasiner au www.bestbuy.com et faire livrer leurs commandes à n’importe quelle adresse ou n’importe quel magasin aux États-Unis.  Voir les détails `;
+  }
+  function espanol() {
+    document.querySelector("#choise > h1:first-child").innerHTML = "¡Hola!";
+    document.querySelector("#choise > h1:last-child").innerHTML =
+      "Seleciona un país.";
+    document.querySelector(
+      "#countryflag > div:first-child > a > h2"
+    ).innerHTML = "Canada";
+    document.querySelector(
+      "#countryflag > div:nth-child(2) > a > h2"
+    ).innerHTML = "Estados Unidos";
+    document.querySelector("#countryflag > div:last-child > a > h2").innerHTML =
+      "Mexico";
+    document.querySelector("#about > h3").innerHTML = "¿COMPRANDO EN EE. UU.?";
+    document.querySelector(
+      "#about > p"
+    ).innerHTML = `Clientes internacionales pueden comparer en www.bestbuy.com y enviar sus pedidos a cualquier domicilio o tienda en EE. UU.  Ver más detalles `;
+  }
+</script>

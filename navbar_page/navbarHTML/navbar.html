@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3b8ef09fa9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../navbarStyles/navbar.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="navLeft">
+            <img src="../navbarImages/bestBuyLogo.png" alt="logo">
+            <div id="menu">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30"
+                    width="30px" height="30px">
+                    <g id="surface8844036">
+                        <path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"
+                            d="M 3 7 C 2.640625 6.996094 2.304688 7.183594 2.121094 7.496094 C 1.941406 7.808594 1.941406 8.191406 2.121094 8.503906 C 2.304688 8.816406 2.640625 9.003906 3 9 L 27 9 C 27.359375 9.003906 27.695312 8.816406 27.878906 8.503906 C 28.058594 8.191406 28.058594 7.808594 27.878906 7.496094 C 27.695312 7.183594 27.359375 6.996094 27 7 Z M 3 14 C 2.640625 13.996094 2.304688 14.183594 2.121094 14.496094 C 1.941406 14.808594 1.941406 15.191406 2.121094 15.503906 C 2.304688 15.816406 2.640625 16.003906 3 16 L 27 16 C 27.359375 16.003906 27.695312 15.816406 27.878906 15.503906 C 28.058594 15.191406 28.058594 14.808594 27.878906 14.496094 C 27.695312 14.183594 27.359375 13.996094 27 14 Z M 3 21 C 2.640625 20.996094 2.304688 21.183594 2.121094 21.496094 C 1.941406 21.808594 1.941406 22.191406 2.121094 22.503906 C 2.304688 22.816406 2.640625 23.003906 3 23 L 27 23 C 27.359375 23.003906 27.695312 22.816406 27.878906 22.503906 C 28.058594 22.191406 28.058594 21.808594 27.878906 21.496094 C 27.695312 21.183594 27.359375 20.996094 27 21 Z M 3 21 " />
+                    </g>
+                </svg>
+                <p style="cursor: pointer;" onclick=showMenu()>Menu</p>
+            </div>
+            <div id="searchBar">
+                <input type="search" placeholder="Search Best Buy">
+                <img id="searchLogo" src="../navbarImages/icons8-search-50.png" alt="searchLogo">
+            </div>
+        </div>
+        <div id="navRight">
+            <div id="aiea">
+                <img src="../navbarImages/aiea.png" alt="aiea">
+                <p>Aiea</p>
+            </div>
+            <div id="cart">
+                <img style="height: 42px;" id="cartImg" src="../navbarImages/cart.png" alt="cart">
+                <p id="cartText"> <a href="../../cart/cart.html">Cart</a> </p>
+            </div>
+        </div>
+    </div>
+    <div id="mininav">
+        <div id="minLeft">
+            <ul style="list-style-type:none;">
+                <li>Top Deals</li>
+                <li>Deal of the Day</li>
+                <li>Totaltech Membership</li>
+                <li>Credit Cards</li>
+                <li>Gift Cards</li>
+                <li>Gift Ideas</li>
+                <li>Health & Wellness</li>
+                <li>More&nbsp<i class="fa-sharp fa-solid fa-angle-down"></i></li>
+            </ul>
+        </div>
+        <div id="minRight">
+            <ul id="ul" style="list-style-type:none;">
+                <li id="acc" onclick=showDiv() style="cursor: pointer;"><i class="fa-regular fa-user"></i>&nbsp Account
+                    &nbsp<i class="fa-sharp fa-solid fa-angle-down"></i>
+                </li>
+                <li>Recently Viewed&nbsp<i class="fa-sharp fa-solid fa-angle-down"></i></li>
+                <li>Order Status&nbsp<i class="fa-sharp fa-solid fa-angle-down"></i></li>
+                <li>Saved Items&nbsp<i class="fa-sharp fa-solid fa-angle-down"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div id="Account_DropDown">
+        <div id="top1">
+            <p style="color: black;font-size: small; width: 70%;">Becoming a My Best Buy® member comes with
+                easy order tracking, rewards, offers and more..</p>
+            <button id="signIn">Sign In</button><br>
+            <button id="create">Create Account</button>
+        </div>
+        <div id="top2">
+            <p>Account &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Your info at
+                    a glance</span></p>
+            <p>Order & Purchase<span>Track,change,cancel</span></p>
+            <p>Your Products&nbsp;&nbsp;<span>Support,manuals,guides</span></p>
+        </div>
+        <div id="top3">
+            <p>Payment Method<span>Saved Credit cards</span></p>
+            <p>Protection Plans & Subscription</p>
+            <p>Digital Library&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Your downloads</span></p>
+        </div>
+        <div id="top4">
+            <p>Best Buy Totaltech <sup>TM</sup></p>
+            <p>Free Home Consultation</p>
+            <p>Member Offers</p>
+        </div>
+        <div id="top5">
+            <p>Account Setting
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Adress,Password,Preference</span>
+            </p>
+            <p><i class="fa-solid fa-xmark"></i>&nbsp;Close</p>
+        </div>
+    </div>
+    <div id="menuBox">
+
+        <div>
+            <div id="outerBox1">
+                <div class="menuHeadText" id="ch">Deals
+                    <span class="material-icons-outlined">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+
+            </div>
+
+            <div id="outerBox2">
+                <div class="menuHeadText" id="ch1">Support & Services
+                    <span class="material-icons-outlined">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="outerBox3">
+                <div class="menuHeadText">Brands
+                    <span class="material-icons-outlined">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="outerBox4">
+                <div class="menuHeadText"> Featured
+                    <span class="material-icons-outlined">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div id="smallB">
+
+            </div>
+            <div id="spD">
+                Shop by Department
+            </div>
+
+            <div class="oB">
+                <div class="oBD" id="ap">
+                    <div class="oBDT">
+                        Appliances
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oB">
+                <div class="oBD" id="tv">
+                    <div class="oBDT">
+                        TV & Home Theater
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oB">
+                <div class="oBD">
+                    <div class="oBDT">
+                        Computers & Tablets
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oB">
+                <div class="oBD1">
+                    <div class="oBDT">
+                        Cameras, Camcorders & Drones
+                    </div>
+                    <div class="material-icons-outlined " id="fa123">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oB">
+                <div class="oBD">
+                    <div class="oBDT">
+                        Cell Phones
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oB">
+                <div class="oBD">
+                    <div class="oBDT">
+                        Audio
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="oB">
+                <div class="oBD">
+                    <div class="oBDT">
+                        Video Games
+                    </div>
+                    <div class="material-icons-outlined " id="fa12">
+                        <i class="fa-sharp fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
+<script src="../navbarScripts/navbar.js"></script>
+</html>
