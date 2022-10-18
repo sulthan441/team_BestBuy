@@ -87,30 +87,19 @@ function showAccBox() {
     e++;
 
 }
+
+//linking of pages
+document.querySelector("#checkout-btn").addEventListener('click',()=>{
+    window.location.href = "../PaymentPage/payment.html";
+});
+
+document.querySelector("#PP-btn").addEventListener('click',()=>{
+    window.location.href = "../PaymentPage/payment.html";
+});
+
 let cart=JSON.parse(localStorage.getItem("cartProduct")) || [];
 
-// let cart = [{
-//     "id": 1,
-//     "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6401/6401738_sd.jpg;maxHeight=300;maxWidth=450",
-//     "model": " UN50TU7000FXZA",
-//     "name": "SAMSUNG - 50 Class 7 Series LED 4K UHD Smart Tizen TV",
-//     "price": "379",
-//     "rating": "2.7",
-//     "save": "100",
-//     "was": "479",
-//     quantity: 1,
-// },
-// {
-//     "id": 2,
-//     "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452992_sd.jpg;maxHeight=300;maxWidth=450",
-//     "model": "70UP8070PUA",
-//     "name": "LG - 70” Class UP8070 Series LED 4K UHD Smart webOS TV",
-//     "price": "749",
-//     "rating": "5",
-//     "save": "250",
-//     "was": "999",
-//     quantity: 1,
-// }]
+
 cart.forEach(el=> {
     el["quantity"]=1
     
