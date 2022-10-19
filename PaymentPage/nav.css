@@ -17,7 +17,8 @@
   margin: auto;
 }
 #nav-left > div > img {
-
+  /* width: 82px;
+  background-size: cover; */
 }
 #nav-left {
   display: flex;

@@ -3,11 +3,10 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: sans-serif;
-  
 }
 
 body {
-  background-color: #F0F2F4;
+  background-color: #f0f2f4;
 }
 
 #mainDiv {
@@ -15,7 +14,7 @@ body {
   margin: auto;
   width: 65%;
   justify-content: space-around;
-
+}
 ::placeholder {
   letter-spacing: 2px;
 }
@@ -193,7 +192,6 @@ label {
 #left-div-2 > div > span {
   font-size: 14px;
   letter-spacing: 1px;
-  
 }
 #left-div-1 > hr {
   opacity: 0.2;
@@ -277,7 +275,7 @@ label {
   color: #0046be;
   font-size: 12px;
   cursor: pointer;
-
+}
 .desc-r {
   display: flex;
   justify-content: space-between;
@@ -430,4 +428,3 @@ hr {
   border: none;
   cursor: pointer;
 }
-
