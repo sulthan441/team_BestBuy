@@ -3,17 +3,19 @@
   margin: 0px;
   box-sizing: border-box;
   font-family: sans-serif;
+  
 }
+
+body {
+  background-color: #F0F2F4;
+}
+
 #mainDiv {
   display: flex;
   margin: auto;
   width: 65%;
   justify-content: space-around;
-  /* display: none; */
-}
-#mainDiv input {
-  text-align: center;
-}
+
 ::placeholder {
   letter-spacing: 2px;
 }
@@ -46,6 +48,8 @@ label {
   /* width: 458px; */
   /* width: 500px; */
   padding: 20px 20px;
+  background-color: #fff;
+  margin-right: 25px;
 }
 /* card details start */
 .cardDetails {
@@ -174,10 +178,13 @@ label {
 /* left div-2 css start */
 #left-div-2 {
   padding: 22px 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   margin-top: 20px;
   margin-bottom: 20px;
   letter-spacing: 1px;
+  /* width: 95%; */
+  max-width: 460px;
+  background-color: #fff;
 }
 #left-div-2 > div {
   padding: 6px 0px;
@@ -186,6 +193,7 @@ label {
 #left-div-2 > div > span {
   font-size: 14px;
   letter-spacing: 1px;
+  
 }
 #left-div-1 > hr {
   opacity: 0.2;
@@ -194,9 +202,11 @@ label {
 
 /* left div-3 css start */
 #left-div-3 {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   padding: 22px 20px;
   margin-bottom: 25px;
+  background-color: #fff;
+  max-width: 460px;
 }
 #left-div-3 > div {
   padding: 10px 0px;
@@ -207,8 +217,9 @@ label {
   border-radius: 6px;
   color: #000;
   font-weight: bold;
-  background-color: yellow;
+  background-color: #fff200;
   border: none;
+  cursor: pointer;
 }
 #left-div-3 > span {
   font-size: 12px;
@@ -224,12 +235,13 @@ label {
 
 /* RIGHT DIV CSS STARTS */
 #rightDiv {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
   /* width: 450px; */
   font-family: sans-serif;
   width: 400px;
   /* height: 500px; */
   margin-top: 9.5%;
+  background-color: #fff;
 }
 
 .flexDiv {
@@ -241,7 +253,7 @@ label {
   justify-content: space-between;
   /* gap: 10px; */
   /* margin-bottom: 5px; */
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 .flexDiv > div {
   padding: 5px 0px;
@@ -262,13 +274,10 @@ label {
   text-align: end;
 }
 .priceDiv-r > div + div + div {
-  color: red;
-  font-size: 10px;
+  color: #0046be;
+  font-size: 12px;
   cursor: pointer;
-  padding: 0px 5px;
 
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
 .desc-r {
   display: flex;
   justify-content: space-between;
@@ -340,6 +349,7 @@ hr {
   margin-left: -5px;
   color: white;
   background-color: black;
+  cursor: pointer;
 }
 #coponDiv > img {
   width: 100%;

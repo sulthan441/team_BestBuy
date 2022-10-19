@@ -20,11 +20,55 @@
         href="https://www.freepnglogos.com/uploads/best-buy-png-logo/logos-quiz-answers-level-png-logo-30.png" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"> -->
 </head>
+<style>
+    #list-item {
+        display: none;
+        max-width: 510px;
+        max-height: 350px;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 19.2%;
+        top: 9%;
+        padding: 10px;
+        overflow-y: scroll;
+        background-color:   #fff ;
+        border-radius: 5px;
+        
+    }
+    #list-item>li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:3px ;
+        gap: 5px;
+        list-style:none;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        font-size: 12px;
+        line-height: 1.8;
+        
+    }
+    #list-item>li:hover{
+        background-color:  #eff2f6;
+        cursor: pointer;
+        text-decoration: underline;
+        color: #0046be;
+        
+    }
+    #list-item>li>img{
+        width: 70px;
+        
+    }
+</style>
 
 <body>
     <nav id="navbarLink">
 
     </nav>
+    <div id="list-item">
+        
+    </div>
     <div id="main_view">
         <div id="left">
             <img src="../homePageImages/48 hours only.png" alt="">

@@ -1,4 +1,4 @@
-const arr = JSON.parse(localStorage.getItem("cart")) || [];
+
 // const arr = [
 //   {
 //     img_url:
@@ -28,10 +28,11 @@ const arr = JSON.parse(localStorage.getItem("cart")) || [];
 // ];
 // localStorage.setItem("arr", JSON.stringify(arr));
 // var ar = JSON.parse(localStorage.getItem("arr")) || [];
-// console.log(ar);
+
 displayData(arr);
 
 function displayData(a) {
+  console.log(a)
   document.getElementById("grid-div").innerHTML = "";
 
   a.map(function (elem, index) {
@@ -54,10 +55,7 @@ function displayData(a) {
     priceDiv.setAttribute("class", "priceDiv-r");
 
     const pri_d = document.createElement("div");
-    pri_d.innerText = "$ " + elem.price;
 
-    const qty = document.createElement("div");
-    qty.innerText = `Qty: ${elem.quantity * elem.price}`;
 
     const rem = document.createElement("div");
 
@@ -80,8 +78,8 @@ function deleteDate(index) {
 
 // Total price add
 function calTotalPrice() {
-  var total = ar.reduce(function (acc, ele) {
-    return acc + ele.price;
+  var total = arr.reduce(function (acc, ele) {
+    return acc + parseInt(ele.price);
   }, 0);
   console.log(total);
   appendPrice(total);
@@ -119,9 +117,9 @@ const couponApply = (total) => {
 function appendPrice(price) {
   document.getElementById("sub-total").innerHTML = "";
   document.querySelector("#p-Div").innerHTML = "";
-  document.getElementById("sub-total").append("₹ " + price);
+  document.getElementById("sub-total").append("$ " + price);
   var para = document.createElement("h2");
-  para.innerText = "₹ " + price;
+  para.innerText = "$ " + price;
   document.querySelector("#p-Div").append(para);
 }
 // payment Form

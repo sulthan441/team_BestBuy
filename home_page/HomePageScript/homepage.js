@@ -453,104 +453,104 @@ backward()
 
 // searchRes=>
 
-let totalDBArr = [];
+// let totalDBArr = [];
 
-TvDataBase.forEach((el) => {
-    totalDBArr.push(el);
-})
+// TvDataBase.forEach((el) => {
+//     totalDBArr.push(el);
+// })
 
-gameDataBase.forEach((el) => {
-    var sid = 0;
+// gameDataBase.forEach((el) => {
+//     var sid = 0;
 
-    totalDBArr.forEach((p) => {
+//     totalDBArr.forEach((p) => {
 
-        if (el.name == p.name) {
-            sid++;
-        }
-    })
+//         if (el.name == p.name) {
+//             sid++;
+//         }
+//     })
 
-    if (sid == 0) {
-        totalDBArr.push(el);
+//     if (sid == 0) {
+//         totalDBArr.push(el);
 
-    }
+//     }
 
-})
-
-
-
-laptopDataBase.forEach((el) => {
-
-    var patil = 0;
-
-    totalDBArr.forEach((p) => {
-
-        if (el.name == p.name) {
-            patil++;
-        }
-    })
-
-    if (patil == 0) {
-        totalDBArr.push(el);
-    }
+// })
 
 
-})
+
+// laptopDataBase.forEach((el) => {
+
+//     var patil = 0;
+
+//     totalDBArr.forEach((p) => {
+
+//         if (el.name == p.name) {
+//             patil++;
+//         }
+//     })
+
+//     if (patil == 0) {
+//         totalDBArr.push(el);
+//     }
+
+
+// })
 // console.log(totalDBArr)
 
-if (localStorage.getItem("totalData") == null) {
-    localStorage.setItem("totalData", JSON.stringify([]));
-}
+// if (localStorage.getItem("totalData") == null) {
+//     localStorage.setItem("totalData", JSON.stringify([]));
+// }
 
 // let totArr = JSON.parse(localStorage.getItem("totalData"));
 
-localStorage.setItem("totalData", JSON.stringify(totalDBArr));
+// localStorage.setItem("totalData", JSON.stringify(totalDBArr));
 
 
 // console.log(totalDBArr)
-let searchResD = document.getElementById("searchRes")
+// let searchResD = document.getElementById("searchRes")
 
 // totalDBArr.forEach((el)=>{
 //     console.log(el.name);
 // })
 
-setInterval(searchInp, 1000)
-function searchInp() {
-    let inpt = document.getElementById("inp").value.toUpperCase();
+// setInterval(searchInp, 1000)
+// function searchInp() {
+//     let inpt = document.getElementById("inp").value.toUpperCase();
 
-    searchResD.innerHTML = null;
-
-
-    totalDBArr.forEach((el) => {
-
-        // console.log(el.name);
-
-        let spName = el.name.split(" ");
-
-        // console.log(spName);
-
-        for (var i = 0; i < spName.length; i++) {
-
-            if (spName[i] == inpt) {
-
-                appSearchProd(el);
+//     searchResD.innerHTML = null;
 
 
-            }
-        }
+//     totalDBArr.forEach((el) => {
 
-    })
+//         // console.log(el.name);
 
-    if (inpt != " ") {
-        let searchR = document.getElementById("searchRes");
-        searchR.style.display = "block";
-    }
-    if (inpt == "") {
-        let searchR = document.getElementById("searchRes");
-        searchR.style.display = "none";
-    }
-    // console.log(inpt)
+//         let spName = el.name.split(" ");
 
-}
+//         // console.log(spName);
+
+//         for (var i = 0; i < spName.length; i++) {
+
+//             if (spName[i] == inpt) {
+
+//                 appSearchProd(el);
+
+
+//             }
+//         }
+
+//     })
+
+//     if (inpt != " ") {
+//         let searchR = document.getElementById("searchRes");
+//         searchR.style.display = "block";
+//     }
+//     if (inpt == "") {
+//         let searchR = document.getElementById("searchRes");
+//         searchR.style.display = "none";
+//     }
+//     // console.log(inpt)
+
+// }
 
 function appSearchProd(el) {
     // console.log(el);
@@ -618,3 +618,65 @@ function goTpd(el) {
 
 }
 
+
+// checking debouncing
+document.querySelector("#inp").addEventListener("keyup", () => {
+    // let listDiv = document.getElementById("item-list");
+    let serchVal= document.getElementById("inp").value;
+    if(serchVal=="") {
+        document.getElementById("list-item").style.display = "none";
+    }
+    else{
+        console.log(serchVal);
+        document.getElementById("list-item").style.display = "block";
+    }
+});
+async function debounceFun() {
+    let res = await fetch("https://api.jsonbin.io/v3/b/634e72a40e6a79321e2c659a");
+    let xyz = await res.json();
+    console.log(xyz.record.ProductArr);
+    abc(xyz.record.ProductArr);
+}
+
+
+document.getElementById("inp").addEventListener("keyup",()=>{
+    let inp=document.getElementById("inp").value;
+    console.log(inp)
+    debounceFun();
+      
+    
+})
+
+
+function abc(x){
+let inp=document.getElementById("inp").value;
+if(inp === ""){
+    document.querySelector("#list-item").innerHTML = null;
+    console.log("null")
+}else{
+
+    let filter=x.filter(function(el){
+         return el.name.toLowerCase().includes(inp)
+    }) 
+    console.log(filter)
+    appendData(filter);
+ }
+}
+
+
+function appendData(data) {
+    console.log(data);
+    document.querySelector("#list-item").innerHTML = null;
+    data.forEach(el => {
+        let list = document.createElement("li")
+        let img = document.createElement("img");
+        img.src = el.image;
+        let title = document.createElement("p");
+        title.innerHTML = el.name;
+    //     let price=document.createElement("h4");
+    //     price.innerHTML=el.price;
+            list.append(title,img);
+    //     div.append(img, title,price);
+        document.querySelector("#list-item").append(list);
+    });
+}
