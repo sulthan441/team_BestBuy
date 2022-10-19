@@ -15,15 +15,13 @@ body {
   margin: auto;
   width: 65%;
   justify-content: space-around;
-  
-  
-}
+
 ::placeholder {
   letter-spacing: 2px;
 }
 label {
   font-weight: bold;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 1.2px;
 }
 /* LEFT DIV CSS STARTS */
@@ -279,13 +277,7 @@ label {
   color: #0046be;
   font-size: 12px;
   cursor: pointer;
-  padding-right: 5px;
-  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
-}
-.priceDiv-r > div + div + div:hover{
-  text-decoration: underline;
 
-}
 .desc-r {
   display: flex;
   justify-content: space-between;
@@ -334,17 +326,16 @@ hr {
   /* grid-template-columns: repeat(1, 1fr); */
 }
 #coponDiv {
-  padding: 0;
-  /* width: fit-content; */
-  /* height: fit-content; */
-  border-radius: 15px;
   margin: 20px 0px;
-
-  align-items: center;
 }
-
+#coponDiv > div {
+  display: flex;
+  width: 50%;
+  margin: auto;
+}
 #coponDiv input {
   padding: 5px;
+  font-weight: bold;
   background-color: wheat;
   border: none;
   outline: none;
@@ -353,11 +344,90 @@ hr {
 #apply {
   padding: 5px;
   border: none;
+  font-weight: bold;
+  font-size: 12px;
   margin-left: -5px;
   color: white;
   background-color: black;
   cursor: pointer;
 }
 #coponDiv > img {
-  width: 200px;
+  width: 100%;
+  border-radius: 22%;
+  /* height: 100px; */
 }
+.cvv {
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 15px;
+}
+.cvv > div {
+  width: 31%;
+  line-height: 1.5;
+}
+.cvv input {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+.cvv > div > label {
+  padding: 1px;
+}
+#cong {
+  position: absolute;
+  display: none;
+}
+#cong img {
+  width: fit-content;
+  transition: 500s ease-in;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 70%;
+}
+#cong > div {
+  position: absolute;
+  font-size: 20px;
+  top: 62%;
+  left: 17%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cong > div > h2 {
+  color: #0046be;
+}
+.process {
+  width: 70%;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  padding: 20px;
+  color: grey;
+  display: none;
+}
+.process > img {
+  width: 38%;
+  display: block;
+}
+.confirm {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  display: none;
+}
+.confirm img {
+  width: 100%;
+}
+#confirmBtn {
+  position: absolute;
+  padding: 11px;
+  left: 33%;
+  top: 67%;
+  background-color: rgb(132, 79, 11);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
