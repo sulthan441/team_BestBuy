@@ -678,5 +678,10 @@ function appendData(data) {
             list.append(title,img);
     //     div.append(img, title,price);
         document.querySelector("#list-item").append(list);
+        list.addEventListener("click",()=>{
+            localStorage.setItem("mainProduct", JSON.stringify(el));
+            console.log("mainProduct");
+            window.location.href="../../productDetails All files/productPage.html"
+        });
     });
 }

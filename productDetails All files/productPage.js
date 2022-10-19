@@ -1,20 +1,21 @@
-console.log("I am in productpage.js file");
+// console.log("I am in productpage.js file");
 
 let mainProduct = JSON.parse(localStorage.getItem("mainProduct")) || {};
 
 // if (mainProduct) {
+console.log(mainProduct);
 showToUIMainProduct(mainProduct);
 // }
 function showToUIMainProduct(mainProduct) {
-  if (mainProduct.hasOwnProperty("title"))
+  if (mainProduct.hasOwnProperty("name"))
     document.querySelector("#productDetail > div:first-child h1").innerHTML =
-      mainProduct.title;
+      mainProduct.name;
   if (mainProduct.hasOwnProperty("image"))
     document.querySelector("#productDetail > div:first-child img").src =
       mainProduct.image;
   if (mainProduct.hasOwnProperty("price")) {
     document.querySelector("#productDetail > div:nth-child(2) h1").innerHTML =
-      mainProduct.price;
+      "$ "+mainProduct.price;
   } else {
     document.querySelector(
       "#productDetail > div:nth-child(2) h1"
@@ -23,7 +24,7 @@ function showToUIMainProduct(mainProduct) {
   if (mainProduct.hasOwnProperty("rating")) {
     document.querySelector("#productDetail span > a").innerHTML = `${
       mainProduct.rating
-    },  ${Math.floor(Math.random() * 1500 + 202)} Expert Reviews`;
+    }⭐,  ${Math.floor(Math.random() * 1500 + 202)} Expert Reviews`;
   } else {
     document.querySelector("#productDetail span > a").innerHTML = `${Math.floor(
       Math.random() * 5 + 1
@@ -35,15 +36,20 @@ function showToUIMainProduct(mainProduct) {
     ).innerHTML = mainProduct.model;
   }
 }
-let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
+
+
+let cartArr = JSON.parse(localStorage.getItem("cartProduct")) || [];
+document.querySelector("#cartButton").addEventListener("click", cartProducts);
+
 function cartProducts() {
   // console.log("I am cartBtn");
   cartArr.push(mainProduct);
-  localStorage.setItem("cart", JSON.stringify(cartArr));
+  localStorage.setItem("cartProduct", JSON.stringify(cartArr));
   if (confirm("Go to Cart")) {
     window.location.href = "../cart/cart.html";
   }
 }
+console.log(cartArr)
 function addToCart(el) {
   // console.log("I am in add to cart button");
   console.log(el);

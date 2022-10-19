@@ -7,17 +7,21 @@ document.querySelector("#login-footer").innerHTML=footer();
 let data=JSON.parse(localStorage.getItem('user')) || [];
 // console.log(data);
 let flag=0;
-document.querySelector(".login-btn").addEventListener('click',()=>{
+document.querySelector(".login-btn").addEventListener('click',(e)=>{
+    e.preventDefault()
     console.log(data);
     let c=check(data);
     if(flag===1){
         alert("Login Successfully");
-        location.href="./index.html"
+        Successfully();
     }
     else{
         alert("Invalid Email or Create an account");
     }
 })
+function Successfully() {
+    window.location.href="../../home_page/homePageHTML/homePage.html"
+}
 
 const check=(data)=>{
     let email=document.querySelector(".email").value;
