@@ -1,4 +1,4 @@
-
+const arr = JSON.parse(localStorage.getItem("cart")) || [];
 // const arr = [
 //   {
 //     img_url:
@@ -28,11 +28,10 @@
 // ];
 // localStorage.setItem("arr", JSON.stringify(arr));
 // var ar = JSON.parse(localStorage.getItem("arr")) || [];
-
+// console.log(ar);
 displayData(arr);
 
 function displayData(a) {
-  console.log(a)
   document.getElementById("grid-div").innerHTML = "";
 
   a.map(function (elem, index) {
@@ -55,7 +54,10 @@ function displayData(a) {
     priceDiv.setAttribute("class", "priceDiv-r");
 
     const pri_d = document.createElement("div");
+    pri_d.innerText = "$ " + elem.price;
 
+    const qty = document.createElement("div");
+    qty.innerText = "Qty:"+elem.quantity;
 
     const rem = document.createElement("div");
 
@@ -107,7 +109,7 @@ const couponApply = (total) => {
     }, 5000);
     // document.getElementById("cong").style.display = "block";
     var saveMoney = (total * 20) / 100;
-    document.getElementById("saveMoney").append(`₹ ${saveMoney} 🥳`);
+    document.getElementById("saveMoney").append(`$ ${saveMoney} 🥳`);
     // alert(`Congratulation You are Save ${saveMoney}`);
     appendPrice(discountPrice);
   }
@@ -193,3 +195,13 @@ function paymentProcess() {
     // // window.location.href = "confirmationPage.html";
   }
 }
+
+
+// link 
+document.querySelector("#logo_home").addEventListener("click", () => {
+  window.location.href = "../home_page/homePageHTML/homePage.html"
+})
+
+document.querySelector("#confirmBtn").addEventListener("click", () => {
+  window.location.href = "../home_page/homePageHTML/homePage.html"
+})
