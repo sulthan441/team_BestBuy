@@ -1,5 +1,4 @@
 // console.log("I am in productpage.js file");
-
 let mainProduct = JSON.parse(localStorage.getItem("mainProduct")) || {};
 
 // if (mainProduct) {

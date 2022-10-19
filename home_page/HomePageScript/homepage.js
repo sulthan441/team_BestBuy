@@ -1,5 +1,7 @@
 import navbar from "../../navbar_page/navbar_export/navbar_export.js"
 document.querySelector("#navbarLink").innerHTML=navbar();
+
+
 let hamb = document.getElementById("menuDiv")
 hamb.addEventListener("click",showMenuBox);
 
