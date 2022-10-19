@@ -323,10 +323,7 @@ label {
 hr {
   opacity: 0.3;
 }
-#grid-div {
-  /* border: 1px solid green; */
-  /* grid-template-columns: repeat(1, 1fr); */
-}
+
 #coponDiv {
   margin: 20px 0px;
 }
