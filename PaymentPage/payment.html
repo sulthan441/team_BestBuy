@@ -7,6 +7,10 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="nav.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="payment.css" />
   </head>
@@ -16,17 +20,30 @@
       <div id="nav">
         <div id="nav-left">
           <div>
-            <img
-              src="https://pilbox.themuse.com/image.png?url=https%3A%2F%2Fassets.themuse.com%2Fuploaded%2Fcompanies%2F12361%2Fsmall_logo.png%3Fv%3Dcca82ab440189ea8aca0cea70d2efd3bb26d218297e85ea5e2a9784166ea6658&h=630&mode=fill&prog=1&w=1200"
-              alt=""
-            />
+            <img src="../login_signup/images/logo.png" alt="" />
           </div>
           <div><h3>CHECKOUT</h3></div>
         </div>
         <div id="nav-right">
-          <div><span>Return to Cart</span></div>
+          <div><a href="#">Return to Cart</a></div>
         </div>
       </div>
+    </div>
+    <div class="process">
+      <p>
+        Please wait your payment under process..............................
+      </p>
+      <img
+        src="https://thumbs.gfycat.com/DangerousWavyFinwhale-max-1mb.gif"
+        alt=""
+      />
+    </div>
+    <div class="confirm">
+      <img
+        src="https://mir-s3-cdn-cf.behance.net/projects/404/8c8cab102502391.Y3JvcCw4NzIsNjgyLDUyNCw1NTc.png"
+        alt=""
+      />
+      <button id="confirmBtn">Continue Shopping</button>
     </div>
     <div id="mainDiv">
       <!-- left div starts -->
@@ -51,7 +68,7 @@
                 <input
                   type="number"
                   id="cardNum"
-                  placeholder="Enter 16-digit card number"
+                  placeholder="xxxx xxxx xxxx xxxx"
                 />
               </div>
             </div>
@@ -94,6 +111,16 @@
                   src="https://www.creditcards.com/ext/cdn.prodstatic.com/shared/images/cards/500x315/first-progress-platinum-elite-mastercard-secured-credit-card-010318.png"
                   alt=""
                 />
+              </div>
+            </div>
+            <div class="cvv">
+              <div>
+                <label>Cvv</label>
+                <input type="number" placeholder="xxx" id="cvv" />
+              </div>
+              <div>
+                <label>Exp-Dt</label>
+                <input type="number" placeholder="MMYY" id="date" />
               </div>
             </div>
             <!-- card div image end -->
@@ -199,12 +226,31 @@
         <!-- form end -->
       </div>
       <!-- left div end -->
+
       <div id="rightDiv">
         <div class="rightinner">
+          <!-- <div id="cong">
+            <img
+              src="https://i.pinimg.com/originals/ad/8c/72/ad8c72f6aa2bcfa72e2fc4a427adaf62.gif"
+              alt=""
+            />
+            <p>Your are asanv df</p>
+          </div> -->
+
           <div><h2>Order Summary</h2></div>
           <div>Store Pickup</div>
           <div>Alea</div>
           <div>Ready for pickup today is about 1 hour</div>
+          <div id="cong">
+            <img
+              src="https://i.pinimg.com/originals/ad/8c/72/ad8c72f6aa2bcfa72e2fc4a427adaf62.gif"
+              alt=""
+            />
+            <div>
+              <h2>You are Save</h2>
+              <h3 id="saveMoney"></h3>
+            </div>
+          </div>
           <div id="grid-div">
             <!-- <div class="flexDiv">
               <div class="desc-r">
@@ -226,11 +272,12 @@
             <!-- order sumary product append here  -->
           </div>
           <div id="coponDiv">
-            <img src="./voucher.png" alt="" />
-            <input type="text" id="cop" />
-            <button id="apply">Apply</button>
+            <img src="./giftvocher.jpg" alt="" />
+            <div>
+              <input type="text" id="cop" placeholder="Apply Coupon" />
+              <button id="apply">Apply</button>
+            </div>
           </div>
-
           <hr />
           <div class="itemTotal">
             <div class="item">
