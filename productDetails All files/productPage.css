@@ -4,12 +4,29 @@
         margin-bottom: 50px;
       }
       button{
-        background-color: #c5cbd5;
+        background-color: #FFE000;
         border-radius: 5px;
         height: 30px;
         color: #0457c8;
         font-size: 20px;
         width: min-content;
+        border: none;
+      }
+      #cartButton{
+        color:black;
+      }
+
+      #cartButton:hover{
+        background-color: rgb(162, 154, 2);
+        cursor: pointer;
+      }
+      #bundle-btn{
+        background-color: #0046be
+      }
+      #bundle-btn:hover{
+        background-color: #001e73;
+        cursor: pointer;
+        
       }
       hr:first-child {
         margin-top: 50px;
@@ -152,6 +169,7 @@
         margin: 2px 5px;
         /* text-align: center; */
         text-align: justify;
+        
       }
       .viewItemS > button {
         width: 96%;
@@ -164,6 +182,7 @@
       .someMoreInfo summary {
         font-size: 22px;
         font-weight: bolder;
+        cursor: pointer;
       }
       #description hr {
         margin-top: 10px;
@@ -224,7 +243,7 @@
         color: #2b71d1;
       }
       .viewItem > button {
-        color: #2b71d1;
+        background-color: #FFE000;
         width: 90%;
         margin: auto;
         border-radius: 5px;
@@ -232,7 +251,7 @@
         font-weight: bold;
         border-color: #2b71d1;
         padding: 9px;
-        background-color: white;
+        
       }
       .viewItem > img {
         width: 80%;
