@@ -17,9 +17,14 @@
   margin: auto;
 }
 #nav-left > div > img {
+
   width: 80px;
   background-size: cover;
   cursor: pointer;
+
+  /* width: 82px;
+  background-size: cover; */
+
 }
 #nav-left {
   display: flex;

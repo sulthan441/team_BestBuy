@@ -4,15 +4,24 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+
+body {
+  background-color: #f0f2f4;
+}
+
+
 #mainDiv {
   display: flex;
   margin: auto;
   width: 65%;
   justify-content: space-around;
+
   /* display: none; */
 }
 #mainDiv input {
   text-align: center;
+
 }
 ::placeholder {
   letter-spacing: 2px;
@@ -265,9 +274,11 @@ label {
   color: red;
   font-size: 10px;
   cursor: pointer;
+
   padding: 0px 5px;
 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 .desc-r {
   display: flex;
@@ -418,4 +429,6 @@ hr {
   font-weight: bold;
   border: none;
   cursor: pointer;
+
 }
+
