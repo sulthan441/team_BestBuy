@@ -89,13 +89,43 @@ function showAccBox() {
 }
 
 //linking of pages
+var abcd=JSON.parse(localStorage.getItem("loginStatus"))||[]
 document.querySelector("#checkout-btn").addEventListener('click', () => {
-    window.location.href = "../PaymentPage/payment.html";
+    if(abcd.length==0){
+        alert("please login first")
+        
+    }
+    else if(abcd[0].status===true){
+        window.location.href = "../PaymentPage/payment.html";
+    }
+    else if(abcd[0].status===false){
+        alert("please login first")
+    }
 });
-
+var abcd=JSON.parse(localStorage.getItem("loginStatus"))||[]
 document.querySelector("#PP-btn").addEventListener('click', () => {
-    window.location.href = "../PaymentPage/payment.html";
+    if(abcd.length==0){
+        alert("please login first")
+        
+    }
+    else if(abcd[0].status===true){
+        window.location.href = "../PaymentPage/payment.html";
+    }
+    else if(abcd[0].status===false){
+        alert("please login first")
+    }
 });
+if(abcd.length==0){
+    console.log("no account found")
+}
+else if(abcd[0].status===true){
+    console.log(localStorage.status)
+    var a=document.querySelector("#acctext");
+    var text=abcd[0].name.toUpperCase()
+    a.innerHTML=" &nbsp;"+text;
+    a.innerHTML.toUpperCase()
+}
+
 
 let goTOHome = document.getElementById("bestBLogo")
 goTOHome.style.cursor = "pointer"
