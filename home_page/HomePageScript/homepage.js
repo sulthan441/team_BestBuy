@@ -102,7 +102,6 @@ let cartPage = document.getElementById("cart");
 cartPage.style.cursor = "pointer"
 cartPage.addEventListener("click", () => {
     window.location.href = "../../cart/cart.html"
-
 })
 
 let signIn = document.getElementById("signIn")
@@ -687,3 +686,16 @@ function appendData(data) {
         });
     });
 }
+var abcd=JSON.parse(localStorage.getItem("loginStatus"))||[]
+console.log(abcd)
+if(abcd.length==0){
+    console.log("no account found")
+}
+else if(abcd[0].status===true){
+    console.log(localStorage.status)
+    var a=document.querySelector("#acctext");
+    var text=abcd[0].name.toUpperCase()
+    a.innerHTML=" &nbsp;"+text;
+    a.innerHTML.toUpperCase()
+}
+
